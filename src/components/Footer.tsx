@@ -28,7 +28,7 @@ export function Footer() {
               Lokasi Studio
             </span>
             <p className="font-body-sm text-xs text-ap-muted leading-relaxed">
-              [Alamat studio]
+              Jl. Banjarsari Selatan No.88, Pedalangan, Kec. Tembalang, Kota Semarang, Jawa Tengah 50275
             </p>
             <p className="font-meta-time text-xs text-ap-muted pt-1">
               Lihat peta untuk petunjuk jalan.
@@ -82,7 +82,7 @@ export function Footer() {
         <div className="pt-6 border-t border-ap-line/40 flex flex-col sm:flex-row items-center justify-between gap-4 font-meta-code text-xs text-ap-muted">
           <div className="flex items-center gap-4">
             <span>© 2026 aparatrambut.</span>
-            <span>[Kota]</span>
+            <span>Kota Semarang</span>
           </div>
 
           <div className="flex flex-wrap items-center gap-x-2 text-[11px] text-ap-muted/70">

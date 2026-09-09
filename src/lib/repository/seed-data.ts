@@ -34,11 +34,12 @@ export const INITIAL_BUSINESS_PROFILE: BusinessProfile = {
   openHour: 10,
   closeHour: 21,
   lastOnlineBookingHour: 20,
-  address: '[Alamat studio]',
-  city: '[Kota]',
+  address: 'Jl. Banjarsari Selatan No.88, Pedalangan, Kec. Tembalang',
+  city: 'Kota Semarang, Jawa Tengah 50275',
   arrivalNote: '[Catatan kedatangan]',
   whatsapp: '[Nomor WhatsApp]',
-  mapsUrl: 'https://maps.google.com',
+  mapsUrl:
+    'https://maps.google.com/?q=Jl.+Banjarsari+Selatan+No.88,+Pedalangan,+Kec.+Tembalang,+Kota+Semarang,+Jawa+Tengah+50275',
 };
 
 export function getInitialBookings(): Booking[] {

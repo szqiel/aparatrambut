@@ -38,9 +38,9 @@ export default function LayananPage() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
           <div className="md:col-span-4 flex flex-col gap-3">
             <div className="flex items-center gap-2 text-ap-pink">
-              <span className="w-2 h-2 rounded-full bg-ap-pink animate-pulse"></span>
+              <span className="w-2 h-2 rounded-full bg-ap-pink"></span>
               <span className="font-meta-label text-xs uppercase tracking-widest text-ap-text font-bold">
-                02 / DAFTAR LAYANAN
+                02 DAFTAR LAYANAN
               </span>
             </div>
             <div className="space-y-1 font-meta-code text-xs text-ap-muted">

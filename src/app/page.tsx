@@ -36,9 +36,9 @@ export default function HomePage() {
           {/* Left Narrative */}
           <div className="lg:col-span-8 flex flex-col items-start gap-4">
             <div className="inline-flex items-center gap-2 bg-ap-surface-low border border-ap-line px-3 py-1">
-              <span className="w-2 h-2 rounded-full bg-ap-pink animate-pulse"></span>
+              <span className="w-2 h-2 rounded-full bg-ap-pink"></span>
               <span className="font-meta-label text-xs uppercase text-ap-text tracking-wider">
-                01 / APARATRAMBUT STUDIO
+                01 APARATRAMBUT STUDIO
               </span>
             </div>
 
@@ -118,7 +118,7 @@ export default function HomePage() {
                   Satu kursi, satu barber
                 </span>
                 <span className="font-meta-time text-xs text-ap-pink">
-                  [Alamat studio], [Kota]
+                  Jl. Banjarsari Selatan No.88, Tembalang, Kota Semarang
                 </span>
               </div>
             </div>
@@ -133,7 +133,7 @@ export default function HomePage() {
             <div className="flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-ap-pink"></span>
               <span className="font-meta-label text-xs uppercase tracking-widest text-ap-text font-semibold">
-                02 / PILIH LAYANAN
+                02 PILIH LAYANAN
               </span>
             </div>
             <Link
@@ -236,11 +236,11 @@ export default function HomePage() {
                     LOKASI STUDIO
                   </span>
                   <h3 className="font-headline-sm text-xl font-bold text-ap-text mt-1">
-                    [Alamat studio]
+                    Jl. Banjarsari Selatan No.88, Pedalangan, Kec. Tembalang
                   </h3>
                 </div>
                 <span className="font-meta-code text-xs text-ap-muted bg-ap-surface border border-ap-line px-3 py-1">
-                  [Kota]
+                  Kota Semarang
                 </span>
               </div>
 

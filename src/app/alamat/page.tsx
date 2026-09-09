@@ -8,9 +8,9 @@ export default function AlamatPage() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
           <div className="md:col-span-4 flex flex-col gap-3">
             <div className="flex items-center gap-2 text-ap-pink">
-              <span className="w-2 h-2 rounded-full bg-ap-pink animate-pulse"></span>
+              <span className="w-2 h-2 rounded-full bg-ap-pink"></span>
               <span className="font-meta-label text-xs uppercase tracking-widest text-ap-text font-bold">
-                04 / ALAMAT & KONTAK
+                04 ALAMAT & KONTAK
               </span>
             </div>
             <div className="space-y-1 font-meta-code text-xs text-ap-muted">
@@ -42,10 +42,10 @@ export default function AlamatPage() {
                 Alamat Fisik Studio
               </span>
               <h2 className="font-headline-sm text-2xl font-bold text-ap-text mt-1">
-                [Alamat studio]
+                Jl. Banjarsari Selatan No.88, Pedalangan, Kec. Tembalang
               </h2>
               <p className="font-meta-code text-xs text-ap-muted mt-1">
-                [Kota], Indonesia
+                Kota Semarang, Jawa Tengah 50275
               </p>
             </div>
 
@@ -136,15 +136,15 @@ export default function AlamatPage() {
                 <div className="absolute inset-0 bg-black/50"></div>
 
                 <div className="relative z-10 flex flex-col items-center gap-3 p-6 bg-ap-surface/90 border border-ap-line max-w-sm">
-                  <div className="w-3 h-3 rounded-full bg-ap-pink animate-ping"></div>
+                  <div className="w-3 h-3 rounded-full bg-ap-pink"></div>
                   <span className="font-headline-sm text-base font-bold text-ap-text">
                     aparatrambut Studio
                   </span>
                   <p className="font-meta-code text-xs text-ap-muted">
-                    [Alamat studio], [Kota]
+                    Jl. Banjarsari Selatan No.88, Pedalangan, Kec. Tembalang, Kota Semarang
                   </p>
                   <a
-                    href="https://maps.google.com"
+                    href="https://maps.google.com/?q=Jl.+Banjarsari+Selatan+No.88,+Pedalangan,+Kec.+Tembalang,+Kota+Semarang,+Jawa+Tengah+50275"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="mt-2 px-4 py-2 rounded-[12px] bg-ap-text text-ap-bg hover:bg-ap-pink hover:text-white font-meta-code text-xs uppercase font-semibold transition-colors"

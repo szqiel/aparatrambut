@@ -97,7 +97,7 @@ export default function TiketPage() {
       case 'BOOKED':
         return (
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-ap-soft-pink border border-ap-pink/40 text-ap-pink font-meta-label text-xs uppercase font-bold tracking-wider">
-            <span className="w-2 h-2 rounded-full bg-ap-pink animate-pulse"></span>
+            <span className="w-2 h-2 rounded-full bg-ap-pink"></span>
             <span>Booking Terkonfirmasi</span>
           </div>
         );
@@ -234,10 +234,10 @@ export default function TiketPage() {
                 </span>
                 <div className="sm:col-span-2">
                   <p className="font-body-sm text-xs text-ap-text font-medium leading-relaxed">
-                    [Alamat studio], [Kota]
+                    Jl. Banjarsari Selatan No.88, Pedalangan, Kec. Tembalang, Kota Semarang
                   </p>
                   <a
-                    href="https://maps.google.com"
+                    href="https://maps.google.com/?q=Jl.+Banjarsari+Selatan+No.88,+Pedalangan,+Kec.+Tembalang,+Kota+Semarang,+Jawa+Tengah+50275"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center gap-1 font-meta-code text-xs text-ap-pink hover:underline mt-1"

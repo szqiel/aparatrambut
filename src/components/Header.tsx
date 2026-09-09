@@ -28,7 +28,7 @@ export function Header() {
           </Link>
 
           <div className="hidden sm:flex items-center gap-2 px-2.5 py-1 bg-ap-surface-low border border-ap-line">
-            <span className="w-1.5 h-1.5 rounded-full bg-ap-pink animate-pulse"></span>
+            <span className="w-1.5 h-1.5 rounded-full bg-ap-pink"></span>
             <span className="font-meta-label text-[11px] uppercase tracking-wider text-ap-muted">
               10.00–21.00 WIB
             </span>

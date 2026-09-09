@@ -8,9 +8,9 @@ export default function TentangPage() {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start">
           <div className="md:col-span-4 flex flex-col gap-3">
             <div className="flex items-center gap-2 text-ap-pink">
-              <span className="w-2 h-2 rounded-full bg-ap-pink animate-pulse"></span>
+              <span className="w-2 h-2 rounded-full bg-ap-pink"></span>
               <span className="font-meta-label text-xs uppercase tracking-widest text-ap-text font-bold">
-                03 / TENTANG STUDIO
+                03 TENTANG STUDIO
               </span>
             </div>
             <div className="space-y-1 font-meta-code text-xs text-ap-muted">
@@ -36,7 +36,7 @@ export default function TentangPage() {
       <section className="py-16 grid grid-cols-1 md:grid-cols-3 gap-8">
         <div className="bg-ap-surface-low border border-ap-line p-8 flex flex-col justify-between">
           <div className="flex flex-col gap-4">
-            <span className="font-meta-code text-xs text-ap-pink font-bold">01 / SATU KURSI</span>
+            <span className="font-meta-code text-xs text-ap-pink font-bold">01 SATU KURSI</span>
             <h2 className="font-headline-sm text-xl font-bold text-ap-text">
               Hanya Satu Orang per Sesi
             </h2>
@@ -51,7 +51,7 @@ export default function TentangPage() {
 
         <div className="bg-ap-surface-low border border-ap-line p-8 flex flex-col justify-between">
           <div className="flex flex-col gap-4">
-            <span className="font-meta-code text-xs text-ap-pink font-bold">02 / 60 MENIT</span>
+            <span className="font-meta-code text-xs text-ap-pink font-bold">02 60 MENIT</span>
             <h2 className="font-headline-sm text-xl font-bold text-ap-text">
               Waktu yang Cukup
             </h2>
@@ -66,7 +66,7 @@ export default function TentangPage() {
 
         <div className="bg-ap-surface-low border border-ap-line p-8 flex flex-col justify-between">
           <div className="flex flex-col gap-4">
-            <span className="font-meta-code text-xs text-ap-pink font-bold">03 / HIGIENE</span>
+            <span className="font-meta-code text-xs text-ap-pink font-bold">03 HIGIENE</span>
             <h2 className="font-headline-sm text-xl font-bold text-ap-text">
               Alat Bersih & Steril
             </h2>

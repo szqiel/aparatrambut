@@ -503,7 +503,15 @@ export class LocalStorageBookingRepository implements BookingRepository {
     this.ensureSeeded();
 
     const data = localStorage.getItem(STORAGE_KEYS.PROFILE);
-    return data ? JSON.parse(data) : INITIAL_BUSINESS_PROFILE;
+    if (!data) return INITIAL_BUSINESS_PROFILE;
+    const parsed = JSON.parse(data);
+    if (parsed.address === '[Alamat studio]') {
+      parsed.address = INITIAL_BUSINESS_PROFILE.address;
+      parsed.city = INITIAL_BUSINESS_PROFILE.city;
+      parsed.mapsUrl = INITIAL_BUSINESS_PROFILE.mapsUrl;
+      localStorage.setItem(STORAGE_KEYS.PROFILE, JSON.stringify(parsed));
+    }
+    return parsed;
   }
 
   public async updateBusinessProfile(

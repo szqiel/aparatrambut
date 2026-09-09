@@ -137,7 +137,7 @@ function BookingContent() {
       <section className="w-full bg-ap-surface-low border-b border-ap-line px-4 sm:px-6 lg:px-8 py-3">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row md:items-center justify-between gap-2">
           <div className="flex items-center gap-2">
-            <span className="inline-block w-2 h-2 rounded-full bg-ap-pink animate-pulse"></span>
+            <span className="inline-block w-2 h-2 rounded-full bg-ap-pink"></span>
             <span className="font-meta-label text-xs uppercase tracking-widest text-ap-muted">
               Alur Reservasi
             </span>
@@ -491,7 +491,7 @@ function BookingContent() {
                 <div className="flex items-start justify-between py-1">
                   <div className="flex flex-col">
                     <span className="font-meta-label text-[10px] uppercase text-ap-muted">Lokasi</span>
-                    <span className="text-xs font-medium text-ap-text">[Alamat studio], [Kota]</span>
+                    <span className="text-xs font-medium text-ap-text">Jl. Banjarsari Selatan No.88, Tembalang, Kota Semarang</span>
                   </div>
                 </div>
               </div>

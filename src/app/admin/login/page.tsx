@@ -20,7 +20,7 @@ export default function AdminLoginPage() {
     <div className="w-full max-w-md mx-auto px-4 py-16 sm:py-24 flex flex-col gap-8">
       <div className="flex flex-col items-center text-center gap-3">
         <div className="inline-flex items-center gap-2 px-3 py-1 bg-ap-soft-pink border border-ap-pink/30 text-ap-pink font-meta-code text-xs font-bold rounded-sm">
-          <span className="w-2 h-2 rounded-full bg-ap-pink animate-pulse"></span>
+          <span className="w-2 h-2 rounded-full bg-ap-pink"></span>
           GERBANG AKSES DEMO M2
         </div>
         <h1 className="font-headline-md text-3xl font-extrabold text-ap-text tracking-tight">

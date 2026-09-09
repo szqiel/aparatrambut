@@ -139,7 +139,7 @@ export default function AdminAgendaPage() {
         <div className="flex flex-col gap-2">
           <div className="flex flex-wrap items-center gap-2 font-meta-code text-xs text-ap-muted">
             <span className="inline-flex items-center gap-1.5 text-ap-pink uppercase font-semibold">
-              <span className="w-2 h-2 rounded-full bg-ap-pink animate-pulse"></span>
+              <span className="w-2 h-2 rounded-full bg-ap-pink"></span>
               Live Shift Aktif
             </span>
             <span>/</span>
