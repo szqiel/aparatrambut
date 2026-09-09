@@ -126,3 +126,13 @@ A task is not done merely because the UI looks plausible. Deliver:
 5. No unrelated refactor, fabricated business content, database addition, or scope expansion.
 
 If a request would choose product policy, real business data, or architecture beyond this agreement, stop at a concrete recommendation and ask the owner to decide.
+
+<!-- BEGIN:nextjs-agent-rules -->
+
+# This is NOT the Next.js you know
+
+This version has breaking changes — APIs, conventions, and file structure may all differ from your training data. Read the relevant guide in `node_modules/next/dist/docs/` (resolved from this file's directory; in monorepos the `next` package may not be visible from the repo root) before writing any code. Heed deprecation notices.
+
+This block is written and re-added by `next dev` — verify at `node_modules/next/dist/server/lib/generate-agent-files.js`. Removing it from a diff only re-creates the uncommitted change; committing it with your work keeps the tree clean.
+
+<!-- END:nextjs-agent-rules -->
