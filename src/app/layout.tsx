@@ -8,6 +8,11 @@ export const metadata: Metadata = {
   title: 'aparatrambut — Cukur Rapi, Tanpa Nunggu Lama',
   description:
     'Tempat cukur personal dengan satu kursi, jadwal teratur, dan waktu yang cukup untuk setiap sesi.',
+  icons: {
+    icon: '/icon.svg',
+    shortcut: '/icon.svg',
+    apple: '/icon.svg',
+  },
 };
 
 export default function RootLayout({
