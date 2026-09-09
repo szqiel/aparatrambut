@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { useTheme } from './ThemeProvider';
 
@@ -66,11 +67,22 @@ export function Header() {
         <div className="flex items-center gap-3 sm:gap-4">
           {/* Theme Toggle */}
           <button
+            type="button"
             onClick={toggleTheme}
-            className="px-2.5 py-1.5 bg-ap-surface-low border border-ap-line text-ap-muted hover:text-ap-text font-meta-code text-[11px] uppercase transition-colors"
-            title="Ganti Tema (Gelap / Terang)"
+            className="w-9 h-9 flex items-center justify-center rounded-[10px] bg-ap-surface-low border border-ap-line text-ap-muted hover:text-ap-text hover:border-ap-pink transition-all active:scale-95"
+            title={theme === 'dark' ? 'Ganti ke tema terang' : 'Ganti ke tema gelap'}
+            aria-label={theme === 'dark' ? 'Ganti ke tema terang' : 'Ganti ke tema gelap'}
           >
-            {theme === 'dark' ? '☀️ Terang' : '🌙 Gelap'}
+            <Image
+              src={theme === 'dark' ? '/icons/light-mode.png' : '/icons/dark-mode.png'}
+              alt={theme === 'dark' ? 'Mode Terang' : 'Mode Gelap'}
+              width={18}
+              height={18}
+              className={`w-4.5 h-4.5 object-contain transition-transform ${
+                theme === 'dark' ? 'invert' : ''
+              }`}
+              priority
+            />
           </button>
 
           {/* Admin link */}

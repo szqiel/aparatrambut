@@ -84,6 +84,28 @@ export function Footer() {
             <span>© 2026 aparatrambut.</span>
             <span>[Kota]</span>
           </div>
+
+          <div className="flex flex-wrap items-center gap-x-2 text-[11px] text-ap-muted/70">
+            <a
+              href="https://www.flaticon.com/free-icons/light-mode"
+              title="light mode icons"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-ap-text hover:underline transition-colors"
+            >
+              Light mode icons created by Any Icon - Flaticon
+            </a>
+            <span>•</span>
+            <a
+              href="https://www.flaticon.com/free-icons/dark-mode"
+              title="dark mode icons"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-ap-text hover:underline transition-colors"
+            >
+              Dark mode icons created by MekoDa - Flaticon
+            </a>
+          </div>
         </div>
       </div>
     </footer>
