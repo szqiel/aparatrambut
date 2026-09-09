@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+
+<html lang="id"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config={theme:{extend:{colors:{"canvas-bg":"#F7F5F6","surface-card":"#FFFFFF","border-hairline":"#DED8DC","text-main":"#211E20","text-subtle":"#756E72","accent-primary":"#D9446A","accent-hover":"#BE3054","badge-pink-bg":"#F8E1E8","badge-pink-text":"#D9446A","btn-secondary-bg":"#FFFFFF","btn-secondary-hover":"#F0ECEE"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"space-xl":"2rem","hairline":"1px","grid-margin-mobile":"1.25rem","gutter-mobile":"1rem","space-md":"1rem","space-editorial":"9rem","space-4xl":"6rem","space-sm":"0.75rem","grid-margin-desktop":"3rem","space-xs":"0.5rem","space-lg":"1.5rem","space-2xs":"0.25rem","space-3xl":"4.5rem","grid-margin-tablet":"2rem","gutter-desktop":"1.5rem","space-2xl":"3rem"},fontFamily:{"display-hero":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"display-hero-mobile":["Plus Jakarta Sans"],"meta-code":["JetBrains Mono"],"body-md":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"meta-time":["JetBrains Mono"],"body-lg":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"meta-label":["JetBrains Mono"]},fontSize:{"display-hero":["84px",{lineHeight:"88px",letterSpacing:"-0.035em",fontWeight:"800"}],"headline-md":["36px",{lineHeight:"42px",letterSpacing:"-0.02em",fontWeight:"600"}],"headline-lg":["56px",{lineHeight:"60px",letterSpacing:"-0.03em",fontWeight:"700"}],"display-hero-mobile":["44px",{lineHeight:"48px",letterSpacing:"-0.03em",fontWeight:"800"}],"meta-code":["12px",{lineHeight:"16px",letterSpacing:"0.04em",fontWeight:"500"}],"body-md":["15px",{lineHeight:"24px",letterSpacing:"0em",fontWeight:"400"}],"headline-lg-mobile":["32px",{lineHeight:"38px",letterSpacing:"-0.025em",fontWeight:"700"}],"body-sm":["13px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"400"}],"meta-time":["14px",{lineHeight:"18px",letterSpacing:"-0.01em",fontWeight:"500"}],"body-lg":["18px",{lineHeight:"28px",letterSpacing:"-0.01em",fontWeight:"400"}],"headline-sm":["24px",{lineHeight:"30px",letterSpacing:"-0.015em",fontWeight:"600"}],"meta-label":["11px",{lineHeight:"14px",letterSpacing:"0.08em",fontWeight:"600"}]}}}};</script><link rel="stylesheet" href="../final-polish.css"></head><body class="bg-canvas-bg text-text-main selection:bg-badge-pink-bg selection:text-accent-primary" data-visual-mode=light><aside class="fixed left-0 top-0 h-full w-64 bg-surface-card border-r border-border-hairline z-50 flex flex-col justify-between py-space-xl px-space-lg"><div class="flex flex-col gap-space-xl"><div class="flex items-center gap-space-xs"><img alt="aparatrambut Minimal Brand Mark" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WPRxBmaq32D_EcSwaEGnCgsHSR6a4XSQPKYy-GbFKEEVS4LHQCt1lfflMz8JvgTByr5YELCCPnRlPlurR859z8qiXLeWhekDqVX0CnEwprQ2kUT-Qi1EKcTj8e8fuqUjUh-6wkqpFUcpg9brr-DbQDI5CRM1CAvp06qqjrMBGMD4YJmrFwnerPoAhO_FZEG2LQ6MwYbQgjnGh-dLHNpo-SEYmmrqJTPAE9H1okQig7cVoxRhvcdf5etSI"/><span class="font-headline-sm text-headline-sm font-bold lowercase tracking-tight text-text-main">aparatrambut</span></div><div class="flex flex-col gap-space-2xs"><span class="font-meta-label text-meta-label uppercase text-text-subtle">Agenda</span><div class="flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-accent-primary"></span><span class="font-meta-code text-meta-code text-text-main">Agenda hari ini</span></div></div><nav class="flex flex-col gap-space-xs"><a aria-current="page" class="px-space-md py-space-sm font-meta-label text-meta-label uppercase tracking-wider transition-all bg-badge-pink-bg text-accent-primary font-bold border-l-2 border-accent-primary" data-path="admin-portal" href="#">Agenda</a><a class="px-space-md py-space-sm font-meta-label text-meta-label uppercase tracking-wider text-text-subtle hover:bg-canvas-bg hover:text-text-main transition-all" data-path="tiket" href="#">Daftar Tiket</a><a class="px-space-md py-space-sm font-meta-label text-meta-label uppercase tracking-wider text-text-subtle hover:bg-canvas-bg hover:text-text-main transition-all" data-path="layanan" href="#">Layanan</a><a class="px-space-md py-space-sm font-meta-label text-meta-label uppercase tracking-wider text-text-subtle hover:bg-canvas-bg hover:text-text-main transition-all" data-path="beranda" href="#">Kembali ke Web</a></nav></div><div class="flex flex-col gap-space-sm font-meta-code text-meta-code text-text-subtle border-t border-border-hairline pt-space-md"><div class="flex items-center justify-between"><span>Status Studio</span><span class="text-accent-primary font-semibold">ONLINE</span></div><div class="flex items-center justify-between"><span>Shift</span><span class="text-text-main">13.00–22.00</span></div></div></aside><div class="pl-64"><header class="fixed top-0 left-64 right-0 h-20 bg-surface-card/90 backdrop-blur-md border-b border-border-hairline z-40 flex items-center justify-between px-space-xl"><div class="flex items-center gap-space-sm"><span class="font-meta-label text-meta-label uppercase text-text-subtle">Workspace /</span><span class="font-meta-code text-meta-code text-text-main font-medium">Agenda hari ini</span></div><div class="flex items-center gap-space-md"><div class="hidden sm:flex items-center gap-space-xs font-meta-time text-meta-time text-text-subtle"><span>WIB</span><span class="text-text-main font-semibold">14:20:08</span></div><a class="inline-flex items-center justify-center px-space-md py-space-xs bg-surface-card border border-border-hairline text-text-main font-meta-label text-meta-label uppercase hover:bg-canvas-bg transition-all" data-path="reservasi" href="#">+ Walk-in</a><div class="w-8 h-8 rounded-full bg-accent-primary text-white flex items-center justify-center"><span class="text-[18px]">•</span></div></div></header><main class="relative pt-20 bg-canvas-bg min-h-screen px-space-xl py-space-xl"><div class="flex flex-col w-full gap-space-xl">
+<!-- Top Operational Control Anchor -->
+<section class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-lg pb-space-lg border-b border-border-hairline">
+<div class="flex flex-col gap-space-xs max-w-2xl">
+<div class="flex items-center gap-space-sm font-meta-code text-meta-code text-text-subtle">
+<span class="inline-flex items-center gap-space-2xs text-accent-primary uppercase font-semibold">
+<span class="w-1.5 h-1.5 rounded-full bg-accent-primary animate-pulse"></span>
+          Live Shift Active
+        </span>
+<span class="text-border-hairline">/</span>
+<span>Kursi 01 (Master)</span>
+<span class="text-border-hairline">/</span>
+<span class="text-text-main">Kapster: aparatrambut</span>
+</div>
+<div class="flex flex-wrap items-baseline gap-space-md">
+<h1 class="font-headline-md text-headline-md text-text-main tracking-tight font-bold">
+          Agenda Hari Ini
+        </h1>
+<div class="flex items-center gap-space-xs px-space-sm py-space-2xs bg-surface-card border border-border-hairline text-text-main font-meta-code text-meta-code">
+<span class="text-accent-primary font-semibold">Pilih tanggal</span>
+<span class="text-sm text-text-subtle cursor-pointer hover:text-text-main">TGL</span>
+</div>
+</div>
+<div class="flex items-center gap-space-sm font-meta-code text-meta-code pt-space-xs">
+<div class="flex items-center gap-space-2xs">
+<span class="w-2 h-2 bg-accent-primary"></span>
+<span class="text-text-main font-semibold">6</span>
+<span class="text-text-subtle uppercase">Terisi</span>
+</div>
+<span class="text-border-hairline">•</span>
+<div class="flex items-center gap-space-2xs">
+<span class="w-2 h-2 bg-border-hairline"></span>
+<span class="text-text-main font-semibold">2</span>
+<span class="text-text-subtle uppercase">Kosong</span>
+</div>
+<span class="text-border-hairline">•</span>
+<div class="flex items-center gap-space-2xs">
+<span class="w-2 h-2 bg-[#F0E6EA]"></span>
+<span class="text-text-main font-semibold">1</span>
+<span class="text-text-subtle uppercase">Istirahat</span>
+</div>
+</div>
+</div>
+<!-- Quick Operator Controls -->
+<div class="flex flex-wrap items-center gap-space-xs font-meta-label text-meta-label uppercase">
+<button class="px-space-md py-space-sm bg-accent-primary text-white font-bold hover:bg-accent-hover transition-colors flex items-center gap-space-xs shadow-sm" id="btn-walkin">
+<span class="text-sm">+</span>
+        + Walk-In Baru
+      </button>
+<button class="px-space-md py-space-sm bg-surface-card border border-border-hairline text-text-main hover:bg-canvas-bg transition-colors flex items-center gap-space-xs">
+<span class="text-sm text-text-subtle">Libur</span>
+        Tandai Hari Libur
+      </button>
+<button class="px-space-md py-space-sm bg-surface-card border border-border-hairline text-text-subtle hover:text-text-main hover:bg-canvas-bg transition-colors flex items-center gap-space-xs">
+<span class="text-sm">i</span>
+        Pengaturan Studio
+      </button>
+</div>
+</section>
+<!-- Split Screen: 9-Row Chronological Grid (Left) + Focused Slot Tactical Drawer (Right) -->
+<div class="grid grid-cols-1 xl:grid-cols-12 gap-space-xl items-start">
+<!-- Nine Hourly Time Slots (8 Columns Desktop) -->
+<div class="xl:col-span-8 flex flex-col w-full bg-surface-card border border-border-hairline">
+<div class="flex items-center justify-between pb-space-xs pt-space-sm px-space-md border-b border-border-hairline font-meta-label text-meta-label text-text-subtle uppercase bg-canvas-bg/50">
+<div class="w-28">Waktu (WIB)</div>
+<div class="flex-1 px-space-md">Pelanggan & layanan</div>
+<div class="w-32 hidden md:block">Tarif</div>
+<div class="w-28 text-center">Status</div>
+<div class="w-44 text-right">Aksi Cepat</div>
+</div>
+<!-- Slot 01: 13:00 - 14:00 (Active Live Selected) -->
+<article class="group relative flex flex-col md:flex-row md:items-center justify-between py-space-md px-space-md border-b border-border-hairline bg-badge-pink-bg/25 hover:bg-badge-pink-bg/40 transition-all cursor-pointer select-row" data-code="APT-1300-RD" data-name="Raditya Pratama" data-note="Fade 0.5 taper, request pomade matte clay. Datang tepat waktu." data-phone="+62 812-8890-4112" data-price="Rp50.000" data-service="Reguler Haircut" data-slot="1" data-status="BOOKED" data-time="13:00 — 14:00">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-accent-primary"></div>
+<div class="flex items-center gap-space-xs w-28 font-meta-time text-meta-time font-semibold text-text-main">
+<span class="w-2 h-2 rounded-full bg-accent-primary animate-ping"></span>
+<span>13:00</span>
+<span class="text-text-subtle text-xs">14:00</span>
+</div>
+<div class="flex-1 md:px-space-md my-space-2xs md:my-0 flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-text-main font-bold">Raditya Pratama</span>
+<span class="font-meta-code text-meta-code text-accent-primary font-semibold">Aktif</span>
+</div>
+<span class="font-body-sm text-body-sm text-text-subtle">Reguler Haircut • Sesi Pembuka Shift</span>
+</div>
+<div class="w-32 hidden md:flex flex-col font-meta-code text-meta-code">
+<span class="text-text-main font-medium">Rp50.000</span>
+<span class="text-text-subtle text-[10px]">QRIS / TUNAI</span>
+</div>
+<div class="w-28 flex justify-center py-space-2xs md:py-0">
+<span class="px-space-xs py-0.5 bg-badge-pink-bg text-badge-pink-text font-meta-label text-meta-label font-bold uppercase tracking-wider">
+            Booked
+          </span>
+</div>
+<div class="w-44 flex items-center justify-end gap-space-2xs">
+<button class="px-space-sm py-1 bg-canvas-bg text-text-main border border-border-hairline font-meta-code text-meta-code hover:bg-accent-primary hover:text-white hover:border-accent-primary transition-colors">
+            Selesai
+          </button>
+<button class="px-space-sm py-1 border border-border-hairline text-text-subtle font-meta-code text-meta-code hover:text-text-main hover:border-text-main transition-colors btn-detail">
+            Detail
+          </button>
+</div>
+</article>
+<!-- Slot 02: 14:00 - 15:00 (Booked) -->
+<article class="group flex flex-col md:flex-row md:items-center justify-between py-space-md px-space-md border-b border-border-hairline hover:bg-canvas-bg/60 transition-all cursor-pointer select-row" data-code="APT-1400-DA" data-name="Dimas Arya" data-note="Hot towel shave traditional. Kulit sensitif bagian dagu." data-phone="+62 878-1920-3341" data-price="Rp50.000" data-service="Haircut + Shaving" data-slot="2" data-status="BOOKED" data-time="14:00 — 15:00">
+<div class="flex items-center gap-space-xs w-28 font-meta-time text-meta-time text-text-main">
+<span class="w-1.5 h-1.5 rounded-full bg-border-hairline group-hover:bg-accent-primary transition-colors"></span>
+<span>14:00</span>
+<span class="text-text-subtle text-xs">15:00</span>
+</div>
+<div class="flex-1 md:px-space-md my-space-2xs md:my-0 flex flex-col">
+<span class="font-headline-sm text-headline-sm text-text-main font-bold">Dimas Arya</span>
+<span class="font-body-sm text-body-sm text-text-subtle">Haircut + Shaving • Handuk Hangat</span>
+</div>
+<div class="w-32 hidden md:flex flex-col font-meta-code text-meta-code">
+<span class="text-text-main font-medium">Rp50.000</span>
+<span class="text-text-subtle text-[10px]">LUNAS (DP 50%)</span>
+</div>
+<div class="w-28 flex justify-center py-space-2xs md:py-0">
+<span class="px-space-xs py-0.5 bg-badge-pink-bg text-badge-pink-text font-meta-label text-meta-label uppercase tracking-wider font-semibold">
+            Booked
+          </span>
+</div>
+<div class="w-44 flex items-center justify-end gap-space-2xs">
+<button class="px-space-sm py-1 bg-canvas-bg text-text-main border border-border-hairline font-meta-code text-meta-code hover:bg-accent-primary hover:text-white hover:border-accent-primary transition-colors">
+            Selesai
+          </button>
+<button class="px-space-sm py-1 border border-border-hairline text-text-subtle font-meta-code text-meta-code hover:text-text-main hover:border-text-main transition-colors btn-detail">
+            Detail
+          </button>
+</div>
+</article>
+<!-- Slot 03: 15:00 - 16:00 (Walk-in) -->
+<article class="group flex flex-col md:flex-row md:items-center justify-between py-space-md px-space-md border-b border-border-hairline hover:bg-canvas-bg/60 transition-all cursor-pointer select-row" data-code="APT-1500-FN" data-name="Fajar Nugraha" data-note="Walk-in on the spot. Klasik undercut, trim tipis." data-phone="+62 821-4433-2109" data-price="Rp50.000" data-service="Reguler Haircut" data-slot="3" data-status="WALK-IN" data-time="15:00 — 16:00">
+<div class="flex items-center gap-space-xs w-28 font-meta-time text-meta-time text-text-main">
+<span class="w-1.5 h-1.5 rounded-full bg-border-hairline group-hover:bg-accent-primary transition-colors"></span>
+<span>15:00</span>
+<span class="text-text-subtle text-xs">16:00</span>
+</div>
+<div class="flex-1 md:px-space-md my-space-2xs md:my-0 flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-text-main font-bold">Fajar Nugraha</span>
+<span class="font-meta-label text-meta-label text-text-subtle uppercase bg-canvas-bg border border-border-hairline px-1">Walk-in</span>
+</div>
+<span class="font-body-sm text-body-sm text-text-subtle">Reguler Haircut • Langsung Kursi</span>
+</div>
+<div class="w-32 hidden md:flex flex-col font-meta-code text-meta-code">
+<span class="text-text-main font-medium">Rp50.000</span>
+<span class="text-text-subtle text-[10px]">PENDING (KASIR)</span>
+</div>
+<div class="w-28 flex justify-center py-space-2xs md:py-0">
+<span class="px-space-xs py-0.5 bg-[#EFE9EB] text-text-main font-meta-label text-meta-label font-semibold uppercase tracking-wider">
+            Walk-in
+          </span>
+</div>
+<div class="w-44 flex items-center justify-end gap-space-2xs">
+<button class="px-space-sm py-1 bg-canvas-bg text-text-main border border-border-hairline font-meta-code text-meta-code hover:bg-accent-primary hover:text-white hover:border-accent-primary transition-colors">
+            Selesai
+          </button>
+<button class="px-space-sm py-1 border border-border-hairline text-text-subtle font-meta-code text-meta-code hover:text-text-main hover:border-text-main transition-colors btn-detail">
+            Detail
+          </button>
+</div>
+</article>
+<!-- Slot 04: 16:00 - 17:00 (Kosong / Available) -->
+<article class="group flex flex-col md:flex-row md:items-center justify-between py-space-md px-space-md border-b border-border-hairline bg-canvas-bg/30 hover:bg-canvas-bg transition-all select-row cursor-pointer" data-code="APT-1600-OPEN" data-name="Slot kosong" data-note="Kursi siap untuk walk-in atau reservasi kilat." data-phone="-" data-price="-" data-service="Belum ada booking" data-slot="4" data-status="TERSEDIA" data-time="16:00 — 17:00">
+<div class="flex items-center gap-space-xs w-28 font-meta-time text-meta-time text-text-subtle">
+<span class="w-1.5 h-1.5 rounded-full border border-border-hairline"></span>
+<span>16:00</span>
+<span class="text-text-subtle text-xs">17:00</span>
+</div>
+<div class="flex-1 md:px-space-md my-space-2xs md:my-0 flex flex-col">
+<span class="font-headline-sm text-headline-sm text-text-subtle font-normal tracking-wide italic">Slot Kosong</span>
+<span class="font-body-sm text-body-sm text-text-subtle/80">Tidak ada reservasi masuk • 60 menit luang</span>
+</div>
+<div class="w-32 hidden md:block font-meta-code text-meta-code text-text-subtle">—</div>
+<div class="w-28 flex justify-center py-space-2xs md:py-0">
+<span class="px-space-xs py-0.5 border border-border-hairline text-text-main bg-white font-meta-label text-meta-label uppercase tracking-wider font-medium">
+            Tersedia
+          </span>
+</div>
+<div class="w-44 flex items-center justify-end gap-space-2xs">
+<button class="px-space-sm py-1 bg-badge-pink-bg text-accent-primary hover:bg-accent-primary hover:text-white font-meta-code text-meta-code transition-colors font-semibold">
+            + Walk-In
+          </button>
+<button class="px-space-sm py-1 border border-border-hairline text-text-subtle font-meta-code text-meta-code hover:text-error hover:border-error transition-colors">
+            Blokir
+          </button>
+</div>
+</article>
+<!-- Slot 05: 17:00 - 18:00 (Booked VIP) -->
+<article class="group flex flex-col md:flex-row md:items-center justify-between py-space-md px-space-md border-b border-border-hairline hover:bg-canvas-bg/60 transition-all cursor-pointer select-row" data-code="APT-1700-KS" data-name="Kevin Sanjaya" data-note="Deep scalp therapy, cooling tonic massage 15 menit." data-phone="+62 813-9090-5544" data-price="Rp50.000" data-service="Haircut + Hair SPA" data-slot="5" data-status="BOOKED" data-time="17:00 — 18:00">
+<div class="flex items-center gap-space-xs w-28 font-meta-time text-meta-time text-text-main">
+<span class="w-1.5 h-1.5 rounded-full bg-border-hairline group-hover:bg-accent-primary transition-colors"></span>
+<span>17:00</span>
+<span class="text-text-subtle text-xs">18:00</span>
+</div>
+<div class="flex-1 md:px-space-md my-space-2xs md:my-0 flex flex-col">
+<span class="font-headline-sm text-headline-sm text-text-main font-bold">Kevin Sanjaya</span>
+<span class="font-body-sm text-body-sm text-text-subtle">Haircut + Hair SPA • Treatment Intensif</span>
+</div>
+<div class="w-32 hidden md:flex flex-col font-meta-code text-meta-code">
+<span class="text-text-main font-medium">Rp50.000</span>
+<span class="text-text-subtle text-[10px]">QRIS PRE-PAID</span>
+</div>
+<div class="w-28 flex justify-center py-space-2xs md:py-0">
+<span class="px-space-xs py-0.5 bg-badge-pink-bg text-badge-pink-text font-meta-label text-meta-label uppercase tracking-wider font-semibold">
+            Booked
+          </span>
+</div>
+<div class="w-44 flex items-center justify-end gap-space-2xs">
+<button class="px-space-sm py-1 bg-canvas-bg text-text-main border border-border-hairline font-meta-code text-meta-code hover:bg-accent-primary hover:text-white hover:border-accent-primary transition-colors">
+            Selesai
+          </button>
+<button class="px-space-sm py-1 border border-border-hairline text-text-subtle font-meta-code text-meta-code hover:text-text-main hover:border-text-main transition-colors btn-detail">
+            Detail
+          </button>
+</div>
+</article>
+<!-- Slot 06: 18:00 - 19:00 (Blocked: Dinner & Sanitation) -->
+<article class="group flex flex-col md:flex-row md:items-center justify-between py-space-md px-space-md border-b border-border-hairline bg-canvas-bg/70 hover:bg-canvas-bg transition-all cursor-pointer select-row" data-code="APT-1800-BLOCK" data-name="Slot diblokir" data-note="Sterilisasi clipper UV, penggantian mata pisau blade razor, jeda makan capster." data-phone="Internal" data-price="Rp0" data-service="Slot diblokir" data-slot="6" data-status="DIBLOKIR" data-time="18:00 — 19:00">
+<div class="flex items-center gap-space-xs w-28 font-meta-time text-meta-time text-text-subtle">
+<span class="text-sm text-text-subtle">×</span>
+<span>18:00</span>
+<span class="text-text-subtle text-xs">19:00</span>
+</div>
+<div class="flex-1 md:px-space-md my-space-2xs md:my-0 flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-text-main font-medium">Jeda Makan &amp; Diblokir</span>
+<span class="font-meta-label text-meta-label text-text-subtle uppercase tracking-widest">Internal</span>
+</div>
+<span class="font-body-sm text-body-sm text-text-subtle">Sterilisasi Razor &amp; Cape Ganti Baru</span>
+</div>
+<div class="w-32 hidden md:block font-meta-code text-meta-code text-text-subtle">—</div>
+<div class="w-28 flex justify-center py-space-2xs md:py-0">
+<span class="px-space-xs py-0.5 bg-[#EAE4E7] text-text-subtle font-meta-label text-meta-label uppercase tracking-wider font-semibold">
+            Diblokir
+          </span>
+</div>
+<div class="w-44 flex items-center justify-end">
+<button class="px-space-md py-1 border border-border-hairline bg-white text-text-subtle hover:text-text-main hover:border-text-main font-meta-code text-meta-code transition-colors">
+            Buka Slot
+          </button>
+</div>
+</article>
+<!-- Slot 07: 19:00 - 20:00 (Booked) -->
+<article class="group flex flex-col md:flex-row md:items-center justify-between py-space-md px-space-md border-b border-border-hairline hover:bg-canvas-bg/60 transition-all cursor-pointer select-row" data-code="APT-1900-BS" data-name="Budi Santoso" data-note="French crop pendek, textured top. Client rutin." data-phone="+62 856-7811-2098" data-price="Rp50.000" data-service="Reguler Haircut" data-slot="7" data-status="BOOKED" data-time="19:00 — 20:00">
+<div class="flex items-center gap-space-xs w-28 font-meta-time text-meta-time text-text-main">
+<span class="w-1.5 h-1.5 rounded-full bg-border-hairline group-hover:bg-accent-primary transition-colors"></span>
+<span>19:00</span>
+<span class="text-text-subtle text-xs">20:00</span>
+</div>
+<div class="flex-1 md:px-space-md my-space-2xs md:my-0 flex flex-col">
+<span class="font-headline-sm text-headline-sm text-text-main font-bold">Budi Santoso</span>
+<span class="font-body-sm text-body-sm text-text-subtle">Reguler Haircut • Regular Client</span>
+</div>
+<div class="w-32 hidden md:flex flex-col font-meta-code text-meta-code">
+<span class="text-text-main font-medium">Rp50.000</span>
+<span class="text-text-subtle text-[10px]">BAYAR DI TEMPAT</span>
+</div>
+<div class="w-28 flex justify-center py-space-2xs md:py-0">
+<span class="px-space-xs py-0.5 bg-badge-pink-bg text-badge-pink-text font-meta-label text-meta-label uppercase tracking-wider font-semibold">
+            Booked
+          </span>
+</div>
+<div class="w-44 flex items-center justify-end gap-space-2xs">
+<button class="px-space-sm py-1 bg-canvas-bg text-text-main border border-border-hairline font-meta-code text-meta-code hover:bg-accent-primary hover:text-white hover:border-accent-primary transition-colors">
+            Selesai
+          </button>
+<button class="px-space-sm py-1 border border-border-hairline text-text-subtle font-meta-code text-meta-code hover:text-text-main hover:border-text-main transition-colors btn-detail">
+            Detail
+          </button>
+</div>
+</article>
+<!-- Slot 08: 20:00 - 21:00 (No-Show) -->
+<article class="group flex flex-col md:flex-row md:items-center justify-between py-space-md px-space-md border-b border-border-hairline bg-[#FFF5F5] hover:bg-[#FEECEC] transition-all cursor-pointer select-row" data-code="APT-2000-HW" data-name="Hendra W." data-note="Dihubungi WA 3x centang dua tanpa balasan. Slot dilepas." data-phone="+62 811-3329-8801" data-price="Rp50.000" data-service="Reguler Haircut" data-slot="8" data-status="NO-SHOW" data-time="20:00 — 21:00">
+<div class="flex items-center gap-space-xs w-28 font-meta-time text-meta-time text-[#BA1A1A]">
+<span class="text-sm">×</span>
+<span>20:00</span>
+<span class="text-text-subtle text-xs">21:00</span>
+</div>
+<div class="flex-1 md:px-space-md my-space-2xs md:my-0 flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-text-subtle line-through">Hendra W.</span>
+<span class="font-meta-label text-meta-label text-[#BA1A1A] uppercase">Gagal Hadir</span>
+</div>
+<span class="font-body-sm text-body-sm text-text-subtle">Tidak merespons konfirmasi WhatsApp</span>
+</div>
+<div class="w-32 hidden md:flex flex-col font-meta-code text-meta-code text-text-subtle">
+<span>Rp50.000</span>
+<span class="text-[#BA1A1A] text-[10px]">BATAL</span>
+</div>
+<div class="w-28 flex justify-center py-space-2xs md:py-0">
+<span class="px-space-xs py-0.5 bg-[#FFDAD6] text-[#93000A] font-meta-label text-meta-label uppercase tracking-wider font-semibold">
+            No-Show
+          </span>
+</div>
+<div class="w-44 flex items-center justify-end gap-space-2xs">
+<button class="px-space-sm py-1 border border-border-hairline bg-white text-text-subtle font-meta-code text-meta-code hover:text-text-main hover:border-text-main transition-colors">
+            Buka slot
+          </button>
+</div>
+</article>
+<!-- Slot 09: 21:00 - 22:00 (Final Session) -->
+<article class="group flex flex-col md:flex-row md:items-center justify-between py-space-md px-space-md hover:bg-canvas-bg/60 transition-all cursor-pointer select-row" data-code="APT-2100-AP" data-name="Adrian Pratama" data-note="Sesi penutup hari. Permintaan cuci rambut dobel tonik." data-phone="+62 819-0102-9993" data-price="Rp50.000" data-service="Reguler Haircut" data-slot="9" data-status="BOOKED" data-time="21:00 — 22:00">
+<div class="flex items-center gap-space-xs w-28 font-meta-time text-meta-time text-text-main">
+<span class="w-1.5 h-1.5 rounded-full bg-border-hairline group-hover:bg-accent-primary transition-colors"></span>
+<span>21:00</span>
+<span class="text-text-subtle text-xs">22:00</span>
+</div>
+<div class="flex-1 md:px-space-md my-space-2xs md:my-0 flex flex-col">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-text-main font-bold">Adrian Pratama</span>
+<span class="font-meta-label text-meta-label text-text-subtle uppercase border border-border-hairline px-1">Slot terakhir</span>
+</div>
+<span class="font-body-sm text-body-sm text-text-subtle">Reguler Haircut • Penutupan Shift Studio</span>
+</div>
+<div class="w-32 hidden md:flex flex-col font-meta-code text-meta-code">
+<span class="text-text-main font-medium">Rp50.000</span>
+<span class="text-text-subtle text-[10px]">TERKONFIRMASI</span>
+</div>
+<div class="w-28 flex justify-center py-space-2xs md:py-0">
+<span class="px-space-xs py-0.5 bg-badge-pink-bg text-badge-pink-text font-meta-label text-meta-label uppercase tracking-wider font-semibold">
+            Booked
+          </span>
+</div>
+<div class="w-44 flex items-center justify-end gap-space-2xs">
+<button class="px-space-sm py-1 bg-canvas-bg text-text-main border border-border-hairline font-meta-code text-meta-code hover:bg-accent-primary hover:text-white hover:border-accent-primary transition-colors">
+            Selesai
+          </button>
+<button class="px-space-sm py-1 border border-border-hairline text-text-subtle font-meta-code text-meta-code hover:text-text-main hover:border-text-main transition-colors btn-detail">
+            Detail
+          </button>
+</div>
+</article>
+</div>
+<!-- Right Column: Focused Tactical Detail Panel (4 Columns Desktop) -->
+<div class="xl:col-span-4 flex flex-col gap-space-lg sticky top-24">
+<!-- Live Appointment Inspection Drawer Card -->
+<div class="bg-surface-card border border-border-hairline p-space-lg flex flex-col gap-space-md relative shadow-sm">
+<div class="flex items-center justify-between border-b border-border-hairline pb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-accent-primary"></span>
+<span class="font-meta-label text-meta-label uppercase tracking-wider text-text-subtle">Slot Aktif Terpilih</span>
+</div>
+<span class="font-meta-code text-meta-code text-accent-primary font-bold" id="detail-code">APT-1300-RD</span>
+</div>
+<!-- Client Identity Header -->
+<div class="flex flex-col gap-space-2xs">
+<span class="font-meta-time text-meta-time text-text-subtle" id="detail-time">13:00 — 14:00 WIB</span>
+<h2 class="font-headline-md text-headline-md text-text-main font-bold tracking-tight" id="detail-name">Raditya Pratama</h2>
+<div class="flex items-center gap-space-xs mt-space-2xs">
+<span class="px-space-xs py-0.5 bg-badge-pink-bg text-badge-pink-text font-meta-label text-meta-label uppercase font-bold" id="detail-status-pill">
+              BOOKED
+            </span>
+<span class="font-meta-code text-meta-code text-text-subtle">Satu kursi Slot #01</span>
+</div>
+</div>
+<!-- Quick Telephony & Messaging Bar -->
+<div class="grid grid-cols-2 gap-space-xs pt-space-xs">
+<a class="flex items-center justify-center gap-space-xs py-space-xs px-space-sm bg-badge-pink-bg text-accent-primary hover:bg-accent-primary hover:text-white font-meta-label text-meta-label uppercase font-semibold transition-colors" href="https://wa.me/6281288904112" id="detail-whatsapp" rel="noopener" target="_blank">
+<span class="text-sm">WA</span>
+            WhatsApp
+          </a>
+<button class="flex items-center justify-center gap-space-xs py-space-xs px-space-sm border border-border-hairline text-text-main hover:bg-canvas-bg font-meta-label text-meta-label uppercase transition-colors" id="btn-call">
+<span class="text-sm">tel</span>
+            Panggil
+          </button>
+</div>
+<!-- Appointment Specs Spec-Sheet -->
+<div class="flex flex-col gap-space-sm border-t border-b border-border-hairline py-space-md font-meta-code text-meta-code">
+<div class="flex items-center justify-between">
+<span class="text-text-subtle uppercase">Layanan:</span>
+<span class="text-text-main font-medium text-right" id="detail-service">Reguler Haircut</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-text-subtle uppercase">Tarif Layanan:</span>
+<span class="text-text-main font-bold" id="detail-price">Rp50.000</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="text-text-subtle uppercase">Kontak Klien:</span>
+<span class="text-text-main" id="detail-phone">+62 812-8890-4112</span>
+</div>
+<div class="flex flex-col gap-1 pt-space-2xs">
+<span class="text-text-subtle uppercase">Catatan Gaya / Request:</span>
+<p class="font-body-sm text-body-sm text-text-main bg-canvas-bg p-space-sm border border-border-hairline" id="detail-note">
+              Fade 0.5 taper, request pomade matte clay. Datang tepat waktu.
+            </p>
+</div>
+</div>
+<!-- State Modifier Controls -->
+<div class="flex flex-col gap-space-xs pt-space-2xs">
+<div class="grid grid-cols-2 gap-space-xs">
+<button class="py-space-sm bg-accent-primary text-white font-meta-label text-meta-label uppercase font-bold hover:bg-accent-hover transition-colors shadow-sm">
+              Tandai Selesai
+            </button>
+<button class="py-space-sm border border-border-hairline text-[#BA1A1A] hover:bg-[#FFDAD6] font-meta-label text-meta-label uppercase font-semibold transition-colors">
+              Tandai No-Show
+            </button>
+</div>
+<button class="w-full py-space-xs border border-border-hairline text-text-subtle hover:text-text-main hover:bg-canvas-bg font-meta-label text-meta-label uppercase transition-colors">
+            Reschedule / Pindah Jam
+          </button>
+</div>
+</div>
+<!-- Studio Ambient Cadence Monitor (Micro Visual Element) -->
+<div class="p-space-md bg-surface-card border border-border-hairline flex flex-col gap-space-sm shadow-sm">
+<div class="flex items-center justify-between font-meta-label text-meta-label uppercase text-text-subtle">
+<span>1 orang per slot</span>
+<span class="text-text-main font-bold">78% Terisi</span>
+</div>
+<!-- Inline Custom Cadence Bar Chart (Under 1KB) -->
+<div class="h-8 flex items-end gap-1 w-full bg-canvas-bg p-1 border border-border-hairline">
+<div class="flex-1 h-full bg-accent-primary" title="13:00"></div>
+<div class="flex-1 h-full bg-accent-primary" title="14:00"></div>
+<div class="flex-1 h-full bg-accent-primary" title="15:00"></div>
+<div class="flex-1 h-0 bg-border-hairline" title="16:00 (Kosong)"></div>
+<div class="flex-1 h-full bg-accent-primary" title="17:00"></div>
+<div class="flex-1 h-2/3 bg-[#EAE4E7]" title="18:00 (Jeda)"></div>
+<div class="flex-1 h-full bg-accent-primary" title="19:00"></div>
+<div class="flex-1 h-1/3 bg-[#BA1A1A]" title="20:00 (No-show)"></div>
+<div class="flex-1 h-full bg-accent-primary" title="21:00"></div>
+</div>
+<div class="flex justify-between font-meta-code text-[10px] text-text-subtle">
+<span>13:00</span>
+<span>17:00</span>
+<span>22:00</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+  // Interactive slot highlight and tactical inspector update
+  const rows = document.querySelectorAll('.select-row');
+  const dName = document.getElementById('detail-name');
+  const dTime = document.getElementById('detail-time');
+  const dCode = document.getElementById('detail-code');
+  const dService = document.getElementById('detail-service');
+  const dPrice = document.getElementById('detail-price');
+  const dPhone = document.getElementById('detail-phone');
+  const dNote = document.getElementById('detail-note');
+  const dStatusPill = document.getElementById('detail-status-pill');
+  const dWa = document.getElementById('detail-whatsapp');
+
+  rows.forEach(row => {
+    row.addEventListener('click', () => {
+      // Clear previous active highlight borders
+      rows.forEach(r => {
+        r.classList.remove('bg-badge-pink-bg/30');
+        const activeBar = r.querySelector('.w-1.bg-accent-primary');
+        if (activeBar) activeBar.classList.add('hidden');
+      });
+
+      // Apply focus state
+      row.classList.add('bg-badge-pink-bg/30');
+      const activeBar = row.querySelector('.w-1.bg-accent-primary');
+      if (activeBar) activeBar.classList.remove('hidden');
+
+      // Sync attributes to the right inspection drawer
+      const { name, phone, service, price, code, note, status, time } = row.dataset;
+      
+      if (dName) dName.textContent = name;
+      if (dTime) dTime.textContent = (time || '') + ' WIB';
+      if (dCode) dCode.textContent = code;
+      if (dService) dService.textContent = service;
+      if (dPrice) dPrice.textContent = price;
+      if (dPhone) dPhone.textContent = phone;
+      if (dNote) dNote.textContent = note;
+      
+      if (dStatusPill) {
+        dStatusPill.textContent = status;
+        if (status === 'BOOKED') {
+          dStatusPill.className = 'px-space-xs py-0.5 bg-badge-pink-bg text-badge-pink-text font-meta-label text-meta-label uppercase font-bold';
+        } else if (status === 'WALK-IN') {
+          dStatusPill.className = 'px-space-xs py-0.5 bg-[#EFE9EB] text-text-main font-meta-label text-meta-label uppercase font-bold';
+        } else if (status === 'NO-SHOW') {
+          dStatusPill.className = 'px-space-xs py-0.5 bg-[#FFDAD6] text-[#93000A] font-meta-label text-meta-label uppercase font-bold';
+        } else if (status === 'DIBLOKIR') {
+          dStatusPill.className = 'px-space-xs py-0.5 bg-[#EAE4E7] text-text-subtle font-meta-label text-meta-label uppercase font-bold';
+        } else {
+          dStatusPill.className = 'px-space-xs py-0.5 border border-border-hairline text-text-main bg-white font-meta-label text-meta-label uppercase font-bold';
+        }
+      }
+
+      if (dWa && phone && phone.includes('+62')) {
+        const cleanPhone = phone.replace(/[^0-9]/g, '');
+        dWa.href = `https://wa.me/${cleanPhone}`;
+        dWa.style.display = 'flex';
+      } else if (dWa) {
+        dWa.style.display = 'none';
+      }
+    });
+  });
+
+  // Simple prompt micro-interaction for walk-in addition
+  const btnWalkin = document.getElementById('btn-walkin');
+  if (btnWalkin) {
+    btnWalkin.addEventListener('click', () => {
+      const slotOpen = document.querySelector('[data-slot="4"]');
+      if (slotOpen) {
+        slotOpen.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        slotOpen.click();
+      }
+    });
+  }
+</script></main></div></body></html>

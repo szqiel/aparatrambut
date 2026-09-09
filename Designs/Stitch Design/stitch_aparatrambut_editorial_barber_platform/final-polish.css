@@ -1,0 +1,184 @@
+/* aparatrambut final polish layer
+   Shared by every exported Stitch screen. Keep the editorial structure,
+   remove the OKC-specific circular CTA signature, and keep light mode light. */
+
+:root {
+  --ap-bg-light: #f7f5f6;
+  --ap-surface-light: #ffffff;
+  --ap-text-light: #211e20;
+  --ap-muted-light: #756e72;
+  --ap-line-light: #ded8dc;
+  --ap-pink-light: #d9446a;
+  --ap-bg-dark: #202020;
+  --ap-surface-dark: #282828;
+  --ap-text-dark: #f3f0f1;
+  --ap-muted-dark: #a49b9f;
+  --ap-line-dark: #3a3638;
+  --ap-pink-dark: #f05a7e;
+  --ap-radius: 12px;
+}
+
+html, body {
+  min-width: 320px;
+}
+
+body[data-visual-mode="light"] {
+  background: var(--ap-bg-light) !important;
+  color: var(--ap-text-light) !important;
+}
+
+body[data-visual-mode="dark"] {
+  background: var(--ap-bg-dark) !important;
+  color: var(--ap-text-dark) !important;
+}
+
+/* Replace Stitch's circular OKC-style CTA with a soft rectangular action. */
+a.rounded-full,
+button.rounded-full,
+a[class*="rounded-full"][class*="w-14"],
+a[class*="rounded-full"][class*="w-16"] {
+  width: auto !important;
+  height: auto !important;
+  min-height: 44px;
+  padding: 13px 22px !important;
+  border-radius: var(--ap-radius) !important;
+  transform: none !important;
+}
+
+button,
+input,
+textarea,
+select,
+a[class*="border"],
+a[class*="bg-"] {
+  border-radius: var(--ap-radius) !important;
+}
+
+button:active,
+a:active {
+  transform: scale(0.985) !important;
+}
+
+/* Keep status dots circular, but remove circular decorative buttons and avatars. */
+span.w-1\.5.h-1\.5.rounded-full,
+span.w-2.h-2.rounded-full,
+span.w-8.h-8.rounded-full {
+  border-radius: 9999px !important;
+}
+
+body[data-visual-mode="light"] header,
+body[data-visual-mode="light"] main,
+body[data-visual-mode="light"] footer,
+body[data-visual-mode="light"] aside {
+  color: var(--ap-text-light) !important;
+}
+
+body[data-visual-mode="light"] main,
+body[data-visual-mode="light"] footer {
+  background-color: var(--ap-bg-light) !important;
+}
+
+body[data-visual-mode="light"] header {
+  background-color: rgba(247, 245, 246, 0.94) !important;
+  border-color: var(--ap-line-light) !important;
+}
+
+body[data-visual-mode="light"] aside {
+  background-color: var(--ap-surface-light) !important;
+  border-color: var(--ap-line-light) !important;
+}
+
+body[data-visual-mode="light"] [style*="#202020"],
+body[data-visual-mode="light"] [style*="#282828"],
+body[data-visual-mode="light"] [style*="#131313"],
+body[data-visual-mode="light"] [style*="#0e0e0e"] {
+  background-color: var(--ap-surface-light) !important;
+  color: var(--ap-text-light) !important;
+}
+
+body[data-visual-mode="light"] [class*="bg-[#202020]"],
+body[data-visual-mode="light"] [class*="bg-[#282828]"],
+body[data-visual-mode="light"] [class*="bg-[#131313]"],
+body[data-visual-mode="light"] [class*="bg-surface-container"] {
+  background-color: var(--ap-bg-light) !important;
+  color: var(--ap-text-light) !important;
+}
+
+body[data-visual-mode="light"] main [class~="bg-surface"],
+body[data-visual-mode="light"] main [class~="bg-white"],
+body[data-visual-mode="light"] main [class*="bg-surface-container-lowest"] {
+  background-color: var(--ap-surface-light) !important;
+  color: var(--ap-text-light) !important;
+}
+
+body[data-visual-mode="light"] main [class*="bg-surface-container-high"],
+body[data-visual-mode="light"] main [class~="bg-surface-container-low"] {
+  background-color: var(--ap-bg-light) !important;
+}
+
+body[data-visual-mode="light"] [class*="bg-surface-elevated"],
+body[data-visual-mode="light"] [class~="bg-surface-container-highest"] {
+  background-color: var(--ap-surface-light) !important;
+  color: var(--ap-text-light) !important;
+}
+
+body[data-visual-mode="light"] [class*="bg-text-primary"],
+body[data-visual-mode="light"] [class*="bg-[#211E20]"],
+body[data-visual-mode="light"] [class*="bg-on-surface"],
+body[data-visual-mode="light"] [style*="background-color: #201D1F"] {
+  background-color: var(--ap-pink-light) !important;
+  color: #ffffff !important;
+  border-color: var(--ap-pink-light) !important;
+}
+
+body[data-visual-mode="light"] [class*="border-[#3A3638]"],
+body[data-visual-mode="light"] [class*="border-border-hairline"] {
+  border-color: var(--ap-line-light) !important;
+}
+
+body[data-visual-mode="light"] [class*="text-[#F3F0F1]"],
+body[data-visual-mode="light"] [class*="text-text-primary"] {
+  color: var(--ap-text-light) !important;
+}
+
+body[data-visual-mode="light"] [class*="text-[#8E888B]"],
+body[data-visual-mode="light"] [class*="text-text-muted"] {
+  color: var(--ap-muted-light) !important;
+}
+
+body[data-visual-mode="dark"] [class*="bg-[#F5F3F3]"],
+body[data-visual-mode="dark"] [class*="bg-[#FFFFFF]"],
+body[data-visual-mode="dark"] [style*="background-color: #F5F3F3"],
+body[data-visual-mode="dark"] [style*="background-color: #FFFFFF"] {
+  background-color: var(--ap-surface-dark) !important;
+  color: var(--ap-text-dark) !important;
+}
+
+/* Material Symbols are replaced in the markup with simple text symbols. */
+.material-symbols-outlined {
+  font-family: inherit !important;
+  font-size: 0.8em !important;
+  line-height: 1 !important;
+}
+
+/* Keep the experience calm and editorial. */
+.shadow-md,
+.shadow-lg,
+.shadow-xl,
+.shadow-2xl {
+  box-shadow: 0 10px 30px rgba(31, 25, 28, 0.08) !important;
+}
+
+@media (max-width: 767px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  header .h-20 {
+    height: 68px !important;
+  }
+
+  main {
+    padding-top: 68px !important;
+  }
+}

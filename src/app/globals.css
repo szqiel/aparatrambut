@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Theme Tokens */
+  --ap-bg-light: #f7f5f6;
+  --ap-surface-light: #ffffff;
+  --ap-surface-low-light: #ffffff;
+  --ap-surface-high-light: #f7f5f6;
+  --ap-surface-lowest-light: #ffffff;
+  --ap-surface-elevated-light: #ffffff;
+  --ap-text-light: #211e20;
+  --ap-muted-light: #756e72;
+  --ap-line-light: #ded8dc;
+  --ap-pink-light: #d9446a;
+  --ap-soft-pink-light: #f8e1e8;
+
+  --ap-bg-dark: #202020;
+  --ap-surface-dark: #282828;
+  --ap-surface-low-dark: #1b1c1c;
+  --ap-surface-high-dark: #2a2a2a;
+  --ap-surface-lowest-dark: #0e0e0e;
+  --ap-surface-elevated-dark: #302e30;
+  --ap-text-dark: #f3f0f1;
+  --ap-muted-dark: #a49b9f;
+  --ap-line-dark: #3a3638;
+  --ap-pink-dark: #f05a7e;
+  --ap-soft-pink-dark: #442831;
+
+  --ap-radius: 12px;
+
+  /* Default to dark mode to match primary visual prototypes */
+  --ap-bg: var(--ap-bg-dark);
+  --ap-surface: var(--ap-surface-dark);
+  --ap-surface-low: var(--ap-surface-low-dark);
+  --ap-surface-high: var(--ap-surface-high-dark);
+  --ap-surface-lowest: var(--ap-surface-lowest-dark);
+  --ap-surface-elevated: var(--ap-surface-elevated-dark);
+  --ap-text: var(--ap-text-dark);
+  --ap-muted: var(--ap-muted-dark);
+  --ap-line: var(--ap-line-dark);
+  --ap-pink: var(--ap-pink-dark);
+  --ap-soft-pink: var(--ap-soft-pink-dark);
+}
+
+html[data-visual-mode="light"],
+body[data-visual-mode="light"] {
+  --ap-bg: var(--ap-bg-light);
+  --ap-surface: var(--ap-surface-light);
+  --ap-surface-low: var(--ap-surface-low-light);
+  --ap-surface-high: var(--ap-surface-high-light);
+  --ap-surface-lowest: var(--ap-surface-lowest-light);
+  --ap-surface-elevated: var(--ap-surface-elevated-light);
+  --ap-text: var(--ap-text-light);
+  --ap-muted: var(--ap-muted-light);
+  --ap-line: var(--ap-line-light);
+  --ap-pink: var(--ap-pink-light);
+  --ap-soft-pink: var(--ap-soft-pink-light);
+}
+
+html[data-visual-mode="dark"],
+body[data-visual-mode="dark"] {
+  --ap-bg: var(--ap-bg-dark);
+  --ap-surface: var(--ap-surface-dark);
+  --ap-surface-low: var(--ap-surface-low-dark);
+  --ap-surface-high: var(--ap-surface-high-dark);
+  --ap-surface-lowest: var(--ap-surface-lowest-dark);
+  --ap-surface-elevated: var(--ap-surface-elevated-dark);
+  --ap-text: var(--ap-text-dark);
+  --ap-muted: var(--ap-muted-dark);
+  --ap-line: var(--ap-line-dark);
+  --ap-pink: var(--ap-pink-dark);
+  --ap-soft-pink: var(--ap-soft-pink-dark);
+}
+
+@layer base {
+  * {
+    border-color: var(--ap-line);
+  }
+
+  html, body {
+    min-width: 320px;
+    background-color: var(--ap-bg);
+    color: var(--ap-text);
+    font-family: var(--font-sans);
+    margin: 0;
+    padding: 0;
+  }
+
+  /* 12px corner radius on inputs, selects, textareas, and primary buttons */
+  button,
+  input,
+  textarea,
+  select {
+    border-radius: var(--ap-radius);
+  }
+}
+
+/* Editorial Button Action Reset: Ensure calm 12px radius, no large circles */
+.btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 13px 24px;
+  border-radius: var(--ap-radius);
+  background-color: var(--ap-pink);
+  color: #ffffff;
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+  filter: brightness(1.08);
+}
+
+.btn-primary:active {
+  transform: scale(0.985);
+}
+
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 11px 20px;
+  border-radius: var(--ap-radius);
+  border: 1px solid var(--ap-line);
+  background-color: var(--ap-surface);
+  color: var(--ap-text);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  transition: all 0.2s ease;
+}
+
+.btn-secondary:hover {
+  background-color: var(--ap-surface-high);
+}
+
+.btn-secondary:active {
+  transform: scale(0.985);
+}
+
+/* Hide scrollbars cleanly while preserving scrollability */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
