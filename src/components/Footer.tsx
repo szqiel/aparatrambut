@@ -72,9 +72,6 @@ export function Footer() {
               <Link href="/booking" className="hover:text-ap-pink transition-colors">
                 04. Booking
               </Link>
-              <Link href="/admin" className="hover:text-ap-pink transition-colors">
-                05. Admin
-              </Link>
             </div>
           </div>
         </div>

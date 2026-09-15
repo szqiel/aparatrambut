@@ -85,18 +85,6 @@ export function Header() {
             />
           </button>
 
-          {/* Admin link */}
-          <Link
-            href="/admin"
-            className={`hidden lg:inline-block font-meta-code text-xs transition-colors ${
-              pathname.startsWith('/admin')
-                ? 'text-ap-pink font-bold'
-                : 'text-ap-muted hover:text-ap-pink'
-            }`}
-          >
-            /admin
-          </Link>
-
           {/* Primary Action Booking */}
           <Link
             href="/booking"
