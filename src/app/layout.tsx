@@ -5,9 +5,9 @@ import { Header } from '../components/Header';
 import { Footer } from '../components/Footer';
 
 export const metadata: Metadata = {
-  title: 'aparatrambut — Cukur Rapi, Tanpa Nunggu Lama',
+  title: 'aparatrambut — Potong Rapi, Jadwal Pasti Tanpa Antre',
   description:
-    'Tempat cukur personal dengan satu kursi, jadwal teratur, dan waktu yang cukup untuk setiap sesi.',
+    'Barbershop satu kursi di Tembalang, Semarang. Pilih jam potong online, datang sesuai jadwal, langsung dicukur tanpa antre.',
   icons: {
     icon: '/icon.svg',
     shortcut: '/icon.svg',

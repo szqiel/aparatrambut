@@ -98,13 +98,13 @@ export default function TiketPage() {
         return (
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-ap-soft-pink border border-ap-pink/40 text-ap-pink font-meta-label text-xs uppercase font-bold tracking-wider">
             <span className="w-2 h-2 rounded-full bg-ap-pink"></span>
-            <span>Booking Terkonfirmasi</span>
+            <span>✓ Jadwal Terkonfirmasi</span>
           </div>
         );
       case 'COMPLETED':
         return (
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-ap-surface-low border border-ap-line text-green-500 font-meta-label text-xs uppercase font-bold tracking-wider">
-            <span>✓ Layanan Selesai</span>
+            <span>✓ Selesai (Terima Kasih)</span>
           </div>
         );
       case 'CANCELLED':
@@ -116,20 +116,20 @@ export default function TiketPage() {
       case 'NO_SHOW':
         return (
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-ap-error-container text-ap-error font-meta-label text-xs uppercase font-bold tracking-wider">
-            <span>Tidak Hadir (No-Show)</span>
+            <span>Tidak Hadir</span>
           </div>
         );
       case 'WALK_IN':
         return (
           <div className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-ap-soft-pink text-ap-pink font-meta-label text-xs uppercase font-bold tracking-wider">
-            <span>Walk-In Terdaftar</span>
+            <span>Tamu Walk-In Terdaftar</span>
           </div>
         );
     }
   };
 
   const whatsappMessage = encodeURIComponent(
-    `Halo aparatrambut, saya ingin konfirmasi tiket booking ${booking.bookingCode} atas nama ${booking.visitorName} untuk tanggal ${booking.date} pukul ${booking.startTime} WIB.`
+    `Halo aparatrambut, saya mau konfirmasi booking kode ${booking.bookingCode} atas nama ${booking.visitorName} untuk tanggal ${formatIndonesianDate(booking.date)} pukul ${booking.startTime} WIB. Terima kasih.`
   );
 
   return (
@@ -139,13 +139,13 @@ export default function TiketPage() {
         <div className="flex items-center gap-2">
           <span className="w-2 h-2 rounded-full bg-ap-pink"></span>
           <span className="font-meta-label text-xs uppercase tracking-widest text-ap-text font-bold">
-            TIKET BOOKING DIGITAL
+            TIKET BOOKING RESMI
           </span>
         </div>
         <div className="flex items-center gap-4 font-meta-code text-xs text-ap-muted">
           <span>KODE: {booking.bookingCode}</span>
           <span className="hidden sm:inline">•</span>
-          <span className="hidden sm:inline">SATU KURSI</span>
+          <span className="hidden sm:inline">1 KURSI KHUSUS</span>
         </div>
       </div>
 
@@ -169,7 +169,7 @@ export default function TiketPage() {
               onClick={handleCopyCode}
               className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-ap-surface border border-ap-line hover:border-ap-text/40 text-ap-text font-meta-code text-xs uppercase transition-colors"
             >
-              <span>{copied ? '✓ Tersalin!' : 'Salin Kode'}</span>
+              <span>{copied ? '✓ Kode Tersalin!' : 'Salin Kode Booking'}</span>
             </button>
           </div>
         </div>
@@ -182,7 +182,7 @@ export default function TiketPage() {
               {/* Line 01: Visitor Name */}
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 pb-5 border-b border-ap-line/40">
                 <span className="font-meta-label text-xs uppercase text-ap-muted tracking-wider">
-                  Nama yang Datang
+                  Nama Pengunjung
                 </span>
                 <div className="sm:col-span-2">
                   <p className="font-headline-sm text-lg font-bold text-ap-text">
@@ -207,7 +207,7 @@ export default function TiketPage() {
                     </p>
                   </div>
                   <p className="font-meta-code text-xs text-ap-muted mt-1">
-                    Durasi: 60 Menit • Sesi Tunggal
+                    Durasi: 60 Menit • Kursi Privat
                   </p>
                 </div>
               </div>
@@ -215,7 +215,7 @@ export default function TiketPage() {
               {/* Line 03: Schedule */}
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 pb-5 border-b border-ap-line/40">
                 <span className="font-meta-label text-xs uppercase text-ap-muted tracking-wider">
-                  Jadwal Sesi
+                  Jadwal Potong
                 </span>
                 <div className="sm:col-span-2 space-y-1">
                   <p className="font-meta-time text-base font-bold text-ap-text">
@@ -250,7 +250,7 @@ export default function TiketPage() {
               {/* Line 05: Notes */}
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 pb-5 border-b border-ap-line/40">
                 <span className="font-meta-label text-xs uppercase text-ap-muted tracking-wider">
-                  Catatan
+                  Catatan Model Rambut
                 </span>
                 <div className="sm:col-span-2">
                   <div className="p-3 bg-ap-surface border border-ap-line font-meta-code text-xs text-ap-text rounded-[12px]">
@@ -269,7 +269,7 @@ export default function TiketPage() {
                     Rp50.000
                   </span>
                   <span className="font-meta-code text-xs text-ap-pink">
-                    (Bayar di tempat: QRIS / Tunai pas)
+                    (Bayar di kasir: QRIS / Tunai pas)
                   </span>
                 </div>
               </div>
@@ -278,7 +278,7 @@ export default function TiketPage() {
             <div className="pt-4 border-t border-ap-line text-[11px] font-meta-code text-ap-muted flex items-center justify-between">
               <span className="inline-flex items-center gap-1.5">
                 <span className="w-1.5 h-1.5 rounded-full bg-ap-pink"></span>
-                Satu booking untuk satu slot.
+                Satu jadwal untuk satu orang.
               </span>
               <span>aparatrambut Studio</span>
             </div>
@@ -292,26 +292,26 @@ export default function TiketPage() {
                   Petunjuk Tamu
                 </span>
                 <span className="font-meta-code text-xs text-ap-pink">
-                  CATATAN TIKET
+                  PANDUAN KEDATANGAN
                 </span>
               </div>
 
               <div className="space-y-4 text-xs">
                 <div className="p-4 bg-ap-surface border border-ap-line rounded-[12px] flex flex-col gap-1">
                   <span className="font-meta-label text-[11px] uppercase font-bold text-ap-text">
-                    01. Datang Tepat Waktu
+                    01. Datang 5–10 Menit Lebih Awal
                   </span>
                   <p className="font-body-sm text-ap-muted leading-relaxed">
-                    Harap tiba 5-10 menit sebelum jadwal. Jika terlambat, kabari admin via WhatsApp agar booking-mu tetap dapat dibantu.
+                    Agar waktu potongmu optimal selama 60 menit penuh, disarankan tiba lebih awal untuk konsultasi model rambut santai. Jika ada kendala macet di jalan, segera hubungi kami via WhatsApp.
                   </p>
                 </div>
 
                 <div className="p-4 bg-ap-surface border border-ap-line rounded-[12px] flex flex-col gap-1">
                   <span className="font-meta-label text-[11px] uppercase font-bold text-ap-text">
-                    02. Pembayaran Sederhana
+                    02. Bayar Setelah Cukur Selesai
                   </span>
                   <p className="font-body-sm text-ap-muted leading-relaxed">
-                    Tidak ada deposit atau transfer awal. Cukup bayar Rp50.000 setelah potongan rambut selesai.
+                    Tanpa DP dan tanpa biaya tersembunyi. Silakan bayar Rp50.000 di kasir setelah potongan rambut selesai menggunakan QRIS atau uang tunai pas.
                   </p>
                 </div>
               </div>
@@ -326,7 +326,7 @@ export default function TiketPage() {
                     rel="noopener noreferrer"
                     className="w-full py-3.5 px-4 bg-ap-pink hover:bg-ap-text text-white font-meta-label text-xs font-bold uppercase tracking-wider rounded-[12px] flex items-center justify-center gap-2 transition-all shadow-md active:scale-[0.99]"
                   >
-                    <span>Konfirmasi via WhatsApp ↗</span>
+                    <span>Kirim Bukti Booking ke WhatsApp ↗</span>
                   </a>
 
                   {/* Secondary Actions */}
@@ -384,7 +384,7 @@ export default function TiketPage() {
             <strong className="text-ap-text">{booking.startTime} WIB</strong>?
           </p>
           <div className="p-3 bg-ap-error-container/30 border border-ap-error/30 text-xs font-meta-code text-ap-error rounded-[12px]">
-            Slot ini akan segera dibuka kembali untuk pelanggan lain.
+            Slot ini akan segera dibuka kembali untuk orang lain. Jika jadwalmu hanya bergeser sedikit, kamu bisa memilih Ubah Jadwal tanpa perlu membatalkan.
           </div>
 
           {cancelError && (

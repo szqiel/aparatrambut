@@ -11,15 +11,23 @@ export default function NotFound() {
           Halaman Tidak Ditemukan
         </h1>
         <p className="font-body-sm text-xs text-ap-muted leading-relaxed">
-          Halaman yang kamu tuju tidak tersedia atau telah dipindahkan.
+          Alamat yang kamu tuju tidak ditemukan atau sudah dipindahkan. Mau potong rambut atau cek jadwal yang masih kosong?
         </p>
       </div>
-      <Link
-        href="/"
-        className="px-6 py-3 rounded-[12px] bg-ap-pink text-white font-meta-label text-xs uppercase font-bold tracking-wider hover:bg-ap-text transition-colors"
-      >
-        Kembali ke Beranda →
-      </Link>
+      <div className="flex flex-col sm:flex-row items-center gap-3 w-full justify-center">
+        <Link
+          href="/booking"
+          className="w-full sm:w-auto px-6 py-3 rounded-[12px] bg-ap-pink text-white font-meta-label text-xs uppercase font-bold tracking-wider hover:bg-ap-text transition-colors text-center"
+        >
+          Lihat Jadwal Booking ↗
+        </Link>
+        <Link
+          href="/"
+          className="w-full sm:w-auto px-6 py-3 rounded-[12px] border border-ap-line text-ap-text font-meta-label text-xs uppercase font-bold tracking-wider hover:bg-ap-surface-low transition-colors text-center"
+        >
+          Kembali ke Beranda →
+        </Link>
+      </div>
     </div>
   );
 }

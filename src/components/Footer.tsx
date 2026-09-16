@@ -14,11 +14,11 @@ export function Footer() {
               </span>
             </div>
             <p className="font-body-sm text-xs text-ap-muted max-w-sm leading-relaxed">
-              Tempat cukur personal dengan jadwal yang jelas dan waktu yang cukup untuk tiap orang.
+              Barbershop satu kursi di Tembalang, Semarang. Potong rambut nyaman, jadwal pasti, dan bebas antrean panjang.
             </p>
             <div className="flex items-center gap-2 pt-2">
               <span className="w-2 h-2 rounded-full bg-ap-pink"></span>
-              <span className="font-meta-code text-xs text-ap-text">Booking tersedia setiap hari</span>
+              <span className="font-meta-code text-xs text-ap-text">Buka Setiap Hari: 10.00 – 21.00 WIB</span>
             </div>
           </div>
 
@@ -40,9 +40,9 @@ export function Footer() {
             <span className="font-meta-label text-xs uppercase tracking-widest text-ap-text font-semibold">
               Operasional & Kontak
             </span>
-            <p className="font-meta-time text-xs text-ap-muted">
-              Setiap hari<br />
-              10.00 – 21.00 WIB
+            <p className="font-meta-time text-xs text-ap-muted leading-relaxed">
+              Setiap hari: 10.00 – 21.00 WIB<br />
+              Booking online hingga 20.00 WIB
             </p>
             <a
               href="https://wa.me/"

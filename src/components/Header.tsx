@@ -30,7 +30,7 @@ export function Header() {
           <div className="hidden sm:flex items-center gap-2 px-2.5 py-1 bg-ap-surface-low border border-ap-line">
             <span className="w-1.5 h-1.5 rounded-full bg-ap-pink"></span>
             <span className="font-meta-label text-[11px] uppercase tracking-wider text-ap-muted">
-              10.00–21.00 WIB
+              Buka Setiap Hari 10.00–21.00 WIB
             </span>
           </div>
         </div>
@@ -70,8 +70,8 @@ export function Header() {
             type="button"
             onClick={toggleTheme}
             className="w-9 h-9 flex items-center justify-center rounded-[10px] bg-ap-surface-low border border-ap-line text-ap-muted hover:text-ap-text hover:border-ap-pink transition-all active:scale-95"
-            title={theme === 'dark' ? 'Ganti ke tema terang' : 'Ganti ke tema gelap'}
-            aria-label={theme === 'dark' ? 'Ganti ke tema terang' : 'Ganti ke tema gelap'}
+            title={theme === 'dark' ? 'Tampilan Terang' : 'Tampilan Gelap'}
+            aria-label={theme === 'dark' ? 'Tampilan Terang' : 'Tampilan Gelap'}
           >
             <Image
               src={theme === 'dark' ? '/icons/light-mode.png' : '/icons/dark-mode.png'}
@@ -90,7 +90,7 @@ export function Header() {
             href="/booking"
             className="inline-flex items-center justify-center min-h-[44px] px-5 py-2.5 rounded-[12px] bg-ap-text text-ap-bg font-meta-label text-xs uppercase font-bold tracking-wider hover:bg-ap-pink hover:text-white transition-all active:scale-[0.98]"
           >
-            Booking
+            Booking ↗
           </Link>
         </div>
       </div>

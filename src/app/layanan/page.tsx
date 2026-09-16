@@ -6,8 +6,8 @@ export default function LayananPage() {
       id: 'svc-reguler',
       num: '01',
       name: 'Reguler Haircut',
-      desc: 'Potongan rambut sesuai gaya yang kamu mau. Termasuk konsultasi bentuk rambut dan finishing yang rapi.',
-      tags: ['Potongan sesuai kebutuhan', 'Finishing rapi', 'Peralatan steril'],
+      desc: 'Pangkas rambut pria untuk segala model (Fade, Taper, Classic, Two-Block, Comma Hair). Sudah termasuk cuci rambut, kompres handuk hangat, pijat relaksasi leher & bahu, hair tonic, dan styling pomade.',
+      tags: ['Cuci Rambut', 'Handuk Hangat', 'Pijat Leher & Bahu', 'Tonic & Pomade'],
       duration: '60 Menit',
       price: 'Rp50.000',
     },
@@ -15,8 +15,8 @@ export default function LayananPage() {
       id: 'svc-shaving',
       num: '02',
       name: 'Haircut + Shaving',
-      desc: 'Potongan rambut sekaligus merapikan jenggot dan kumis dengan handuk hangat dan pisau cukur steril.',
-      tags: ['Handuk hangat', 'Cukur presisi', 'Aftershave soothing'],
+      desc: 'Potong rambut lengkap ditambah cukur bersih kumis dan jenggot. Menggunakan kompres handuk hangat, krim cukur lembut, pisau silet baru steril sekali pakai, dan soothing aftershave anti-iritasi.',
+      tags: ['Potong Lengkap', 'Handuk Hangat', 'Pisau Silet Baru 1x Pakai', 'Aftershave'],
       duration: '60 Menit',
       price: 'Rp50.000',
     },
@@ -24,8 +24,8 @@ export default function LayananPage() {
       id: 'svc-hairspa',
       num: '03',
       name: 'Haircut + Hair SPA',
-      desc: 'Potongan rambut dengan perawatan tambahan untuk rambut dan kulit kepala disertai pijat relaksasi ringan.',
-      tags: ['Tonic kulit kepala', 'Pijat relaksasi', 'Perawatan rambut'],
+      desc: 'Potong rambut dipadukan dengan creambath kulit kepala untuk membersihkan minyak berlebih dan ketombe, disertai pijatan relaksasi kepala mendalam serta cooling tonic menthol dingin.',
+      tags: ['Potong Lengkap', 'Creambath Kulit Kepala', 'Pijat Relaksasi', 'Cooling Tonic'],
       duration: '60 Menit',
       price: 'Rp50.000',
     },
@@ -40,23 +40,23 @@ export default function LayananPage() {
             <div className="flex items-center gap-2 text-ap-pink">
               <span className="w-2 h-2 rounded-full bg-ap-pink"></span>
               <span className="font-meta-label text-xs uppercase tracking-widest text-ap-text font-bold">
-                02 DAFTAR LAYANAN
+                DAFTAR LAYANAN & HARGA
               </span>
             </div>
             <div className="space-y-1 font-meta-code text-xs text-ap-muted">
-              <p>PILIH LAYANAN</p>
-              <p>Satu orang, satu jadwal</p>
-              <p>Tiga pilihan, harga sama</p>
+              <p>HARGA FLAT & JELAS</p>
+              <p>Rp50.000 per layanan</p>
+              <p>Semua berdurasi 60 menit</p>
             </div>
           </div>
 
           <div className="md:col-span-8 flex flex-col">
             <h1 className="font-headline-lg text-3xl sm:text-5xl lg:text-6xl font-extrabold text-ap-text tracking-tight lowercase">
-              Tiga layanan, harga sama.<br />
-              <span className="text-ap-pink font-normal">Pilih yang paling cocok untukmu.</span>
+              Tiga layanan, tarif flat Rp50.000.<br />
+              <span className="text-ap-pink font-normal">Semua 60 menit, bayar di kasir setelah pangkas selesai.</span>
             </h1>
             <p className="font-body-lg text-sm sm:text-base text-ap-muted mt-4 max-w-2xl leading-relaxed">
-              Semua layanan berlangsung 60 menit dan dibayar setelah selesai di tempat. Tidak ada biaya tersembunyi.
+              Semua layanan berdurasi 60 menit dan dibayar di kasir setelah pangkas selesai. Tanpa uang muka (DP) dan tanpa biaya tersembunyi.
             </p>
           </div>
         </div>
@@ -130,17 +130,17 @@ export default function LayananPage() {
       <section className="p-6 sm:p-8 bg-ap-surface-low border border-ap-line flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
         <div className="flex flex-col gap-1 max-w-xl">
           <span className="font-meta-label text-xs uppercase tracking-widest text-ap-pink font-semibold">
-            Pembayaran di Tempat
+            Pembayaran di Kasir
           </span>
           <p className="font-body-sm text-sm text-ap-muted">
-            Pembayaran dilakukan setelah potongan selesai dengan QRIS atau tunai pas. Tidak perlu pembayaran di muka.
+            Bayar setelah pangkas selesai menggunakan QRIS (semua e-wallet & mobile banking) atau tunai pas. Tanpa uang muka (DP).
           </p>
         </div>
         <Link
           href="/booking"
           className="px-6 py-3 bg-ap-text text-ap-bg hover:bg-ap-pink hover:text-white rounded-[12px] font-meta-label text-xs uppercase font-bold tracking-widest transition-colors shrink-0"
         >
-          Lihat Jadwal Kosong ↗
+          Lihat Jam Kosong ↗
         </Link>
       </section>
     </div>

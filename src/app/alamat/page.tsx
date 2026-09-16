@@ -10,11 +10,11 @@ export default function AlamatPage() {
             <div className="flex items-center gap-2 text-ap-pink">
               <span className="w-2 h-2 rounded-full bg-ap-pink"></span>
               <span className="font-meta-label text-xs uppercase tracking-widest text-ap-text font-bold">
-                04 ALAMAT & KONTAK
+                LOKASI & KONTAK
               </span>
             </div>
             <div className="space-y-1 font-meta-code text-xs text-ap-muted">
-              <p>LOKASI & JAM OPERASIONAL</p>
+              <p>STUDIO TEMBALANG, SEMARANG</p>
               <p>Buka setiap hari</p>
               <p>10.00 – 21.00 WIB</p>
             </div>
@@ -23,10 +23,10 @@ export default function AlamatPage() {
           <div className="md:col-span-8 flex flex-col">
             <h1 className="font-headline-lg text-3xl sm:text-5xl lg:text-6xl font-extrabold text-ap-text tracking-tight lowercase">
               Lokasi studio,<br />
-              <span className="text-ap-pink font-normal">petunjuk jalan & kontak langsung.</span>
+              <span className="text-ap-pink font-normal">jam buka & petunjuk arah.</span>
             </h1>
             <p className="font-body-lg text-base sm:text-lg text-ap-muted mt-6 max-w-2xl leading-relaxed">
-              Datanglah tepat waktu sesuai jadwal booking kamu. Jika mengalami kendala perjalanan atau keterlambatan di jalan, langsung hubungi barber melalui WhatsApp.
+              Studio kami berada di kawasan Tembalang, dekat kampus Undip Semarang. Tempat mudah dijangkau dengan area parkir motor dan mobil yang aman. Datanglah sesuai jadwal booking yang kamu pesan.
             </p>
           </div>
         </div>
@@ -54,7 +54,7 @@ export default function AlamatPage() {
                 Petunjuk Arah & Parkir
               </span>
               <p className="font-body-sm text-xs text-ap-muted leading-relaxed">
-                [Catatan kedatangan]
+                Pinggir jalan utama Banjarsari Selatan, sekitar 3 menit dari gerbang Universitas Diponegoro (Undip) Tembalang. Parkir motor dan mobil aman tersedia tepat di depan studio.
               </p>
             </div>
 
@@ -63,11 +63,11 @@ export default function AlamatPage() {
                 Jam Operasional
               </span>
               <div className="flex items-center justify-between text-xs font-meta-code text-ap-muted border-b border-ap-line/40 py-2">
-                <span>Senin – Minggu (Setiap Hari)</span>
+                <span>Senin – Minggu (Buka Setiap Hari)</span>
                 <span className="text-ap-text font-bold">10.00 – 21.00 WIB</span>
               </div>
               <div className="flex items-center justify-between text-xs font-meta-code text-ap-muted py-2">
-                <span>Sesi Online Terakhir</span>
+                <span>Booking Online Terakhir</span>
                 <span className="text-ap-pink font-bold">20.00 WIB</span>
               </div>
             </div>
@@ -97,10 +97,10 @@ export default function AlamatPage() {
             <span className="text-ap-pink text-xl font-bold">ℹ</span>
             <div className="flex flex-col gap-1">
               <h3 className="font-headline-sm text-sm font-bold text-ap-text">
-                Kalau Terlambat Datang
+                Terlambat di Perjalanan?
               </h3>
               <p className="font-body-sm text-xs text-ap-muted leading-relaxed">
-                Kami memahami lalu lintas dan kendala tak terduga. Jika kamu terlambat, segera kabari admin melalui WhatsApp agar jadwalmu bisa dibantu dan dikoordinasikan dengan tenang.
+                Kami memahami lalu lintas dan kendala tak terduga. Jika kamu terlambat, segera kabari kami via WhatsApp agar jadwalmu tetap kami amankan, atau gunakan fitur Ubah Jadwal di tiket digitalmu.
               </p>
             </div>
           </div>
@@ -157,13 +157,13 @@ export default function AlamatPage() {
 
             <div className="pt-6 border-t border-ap-line flex items-center justify-between">
               <span className="font-meta-code text-xs text-ap-muted">
-                Sudah siap datang?
+                Sudah tahu jadwal luangmu?
               </span>
               <Link
                 href="/booking"
                 className="px-6 py-3 rounded-[12px] bg-ap-pink hover:bg-ap-text text-white font-meta-label text-xs uppercase font-bold tracking-wider transition-colors shadow-lg"
               >
-                Pilih Jadwal Booking ↗
+                Pilih Jadwal Booking Sekarang ↗
               </Link>
             </div>
           </div>

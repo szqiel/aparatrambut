@@ -85,23 +85,23 @@ function BookingContent() {
     setErrorMessage('');
 
     if (!selectedService) {
-      setErrorMessage('Pilih salah satu layanan.');
+      setErrorMessage('Silakan pilih salah satu layanan.');
       return;
     }
     if (!selectedDate) {
-      setErrorMessage('Pilih tanggal kunjungan.');
+      setErrorMessage('Silakan pilih tanggal kedatangan.');
       return;
     }
     if (!selectedSlotTime) {
-      setErrorMessage('Pilih jam operasional yang tersedia.');
+      setErrorMessage('Silakan pilih jam potong yang tersedia.');
       return;
     }
     if (!visitorName.trim()) {
-      setErrorMessage('Nama orang yang datang wajib diisi.');
+      setErrorMessage('Mohon isi nama pengunjung yang akan dicukur.');
       return;
     }
     if (!whatsapp.trim()) {
-      setErrorMessage('Nomor WhatsApp wajib diisi untuk penerimaan tiket.');
+      setErrorMessage('Mohon isi nomor WhatsApp untuk pengiriman link tiket.');
       return;
     }
 
@@ -139,24 +139,24 @@ function BookingContent() {
           <div className="flex items-center gap-2">
             <span className="inline-block w-2 h-2 rounded-full bg-ap-pink"></span>
             <span className="font-meta-label text-xs uppercase tracking-widest text-ap-muted">
-              Alur Reservasi
+              Tahapan Booking
             </span>
           </div>
 
           <nav aria-label="Tahapan reservasi" className="flex items-center gap-4 font-meta-code text-xs text-ap-muted">
             <div className={`flex items-center gap-1.5 ${selectedService ? 'text-ap-text font-bold' : ''}`}>
               <span className="text-ap-pink">•</span>
-              <span>01. Layanan</span>
+              <span>1. Layanan</span>
             </div>
-            <span>/</span>
+            <span>•</span>
             <div className={`flex items-center gap-1.5 ${selectedSlotTime ? 'text-ap-text font-bold' : ''}`}>
               <span className={selectedSlotTime ? 'text-ap-pink' : ''}>•</span>
-              <span>02. Tanggal & Jam</span>
+              <span>2. Tanggal & Jam</span>
             </div>
-            <span>/</span>
+            <span>•</span>
             <div className={`flex items-center gap-1.5 ${visitorName && whatsapp ? 'text-ap-text font-bold' : ''}`}>
               <span>•</span>
-              <span>03. Data Diri</span>
+              <span>3. Data Diri</span>
             </div>
           </nav>
         </div>
@@ -169,14 +169,14 @@ function BookingContent() {
           <div className="lg:col-span-8 flex flex-col gap-10">
             <div>
               <div className="inline-flex items-center gap-2 text-ap-pink font-meta-code text-xs">
-                <span>Pilih Jam & Data</span>
+                <span>Pemesanan Jadwal Online</span>
                 <span className="h-px w-12 bg-ap-line"></span>
               </div>
               <h1 className="font-headline-lg text-3xl sm:text-4xl font-extrabold text-ap-text tracking-tight mt-1">
-                Pilih waktu yang cocok.
+                Pilih jadwal potong.
               </h1>
               <p className="font-body-md text-sm text-ap-muted mt-2 max-w-xl">
-                Satu slot hanya untuk satu orang. Waktumu tidak akan bertabrakan dengan antrean tamu lain.
+                Pilih layanan, tentukan tanggal dan jam yang tersedia, lalu isi data diri untuk penerbitan tiket. Tanpa perlu mendaftar akun.
               </p>
             </div>
 
@@ -230,7 +230,7 @@ function BookingContent() {
             <div className="bg-ap-surface-low border border-ap-line p-6 sm:p-8 flex flex-col gap-4">
               <div className="flex items-center justify-between pb-2 border-b border-ap-line">
                 <span className="font-meta-label text-xs uppercase tracking-widest text-ap-text font-bold">
-                  2. Pilih Tanggal
+                  2. Pilih Hari (Tersedia hingga 7 hari ke depan)
                 </span>
                 <span className="font-meta-code text-xs text-ap-muted">
                   {selectedDate ? formatIndonesianDate(selectedDate, { includeYear: true }) : 'Pilih tanggal'}
@@ -282,17 +282,17 @@ function BookingContent() {
             <div className="bg-ap-surface-low border border-ap-line p-6 sm:p-8 flex flex-col gap-4">
               <div className="flex items-center justify-between pb-2 border-b border-ap-line">
                 <span className="font-meta-label text-xs uppercase tracking-widest text-ap-text font-bold">
-                  3. Pilih Jam Operasional (1 Sesi = 60 Menit)
+                  3. Pilih Jam Potong
                 </span>
                 <div className="flex items-center gap-3 font-meta-code text-[11px] text-ap-muted">
                   <span className="inline-flex items-center gap-1">
-                    <span className="w-2 h-2 bg-ap-pink rounded-full"></span> Terpilih
+                    <span className="w-2 h-2 bg-ap-pink rounded-full"></span> Jam Terpilih
                   </span>
                   <span className="inline-flex items-center gap-1">
-                    <span className="w-2 h-2 border border-ap-line bg-ap-surface rounded-full"></span> Kosong
+                    <span className="w-2 h-2 border border-ap-line bg-ap-surface rounded-full"></span> Tersedia
                   </span>
                   <span className="inline-flex items-center gap-1">
-                    <span className="w-2 h-2 bg-ap-line rounded-full"></span> Terisi
+                    <span className="w-2 h-2 bg-ap-line rounded-full"></span> Sudah Penuh
                   </span>
                 </div>
               </div>
@@ -338,7 +338,7 @@ function BookingContent() {
                             ? 'Tersedia'
                             : slot.status === 'PAST'
                             ? 'Sudah lewat'
-                            : 'Terisi'}
+                            : 'Sudah penuh'}
                         </span>
                       </button>
                     );
@@ -351,27 +351,27 @@ function BookingContent() {
             <form onSubmit={handleSubmit} className="bg-ap-surface-low border border-ap-line p-6 sm:p-8 flex flex-col gap-6">
               <div className="flex items-center justify-between pb-2 border-b border-ap-line">
                 <span className="font-meta-label text-xs uppercase tracking-widest text-ap-text font-bold">
-                  4. Data Orang yang Datang
+                  4. Data Pengunjung & Kontak
                 </span>
                 <span className="font-meta-code text-xs text-ap-pink">
-                  Untuk Penerbitan Tiket
+                  Untuk Tiket Digital
                 </span>
               </div>
 
-              <div className="p-3 bg-ap-soft-pink border border-ap-pink/30 text-xs font-meta-code text-ap-text">
-                ℹ <strong>Penting:</strong> Nama di bawah adalah orang yang akan datang dicukur. Nomor WhatsApp boleh milik pemesan untuk menerima tiket digital.
+              <div className="p-3 bg-ap-soft-pink border border-ap-pink/30 text-xs font-meta-code text-ap-text rounded-[12px]">
+                💡 <strong>Bisa memesan untuk orang lain:</strong> Nama diisi orang yang akan dicukur (bisa untuk teman atau keluarga). Nomor WhatsApp untuk menerima link tiket digital.
               </div>
 
               {/* Full Name */}
               <div className="flex flex-col gap-1.5">
                 <label htmlFor="visitorName" className="font-meta-label text-xs uppercase tracking-wider text-ap-muted font-bold">
-                  Nama Lengkap Pengunjung <span className="text-ap-pink">*</span>
+                  Nama Pengunjung yang Datang <span className="text-ap-pink">*</span>
                 </label>
                 <input
                   id="visitorName"
                   type="text"
                   required
-                  placeholder="e.g. Raditya Pratama"
+                  placeholder="Contoh: Dimas Pratama"
                   value={visitorName}
                   onChange={(e) => setVisitorName(e.target.value)}
                   className="w-full bg-ap-surface border border-ap-line px-4 py-3 text-sm text-ap-text placeholder-ap-muted focus:outline-none focus:border-ap-pink transition-colors rounded-[12px]"
@@ -381,19 +381,19 @@ function BookingContent() {
               {/* WhatsApp Number */}
               <div className="flex flex-col gap-1.5">
                 <label htmlFor="whatsapp" className="font-meta-label text-xs uppercase tracking-wider text-ap-muted font-bold">
-                  Nomor WhatsApp <span className="text-ap-pink">*</span>
+                  Nomor WhatsApp Aktif <span className="text-ap-pink">*</span>
                 </label>
                 <input
                   id="whatsapp"
                   type="tel"
                   required
-                  placeholder="0812-xxxx-xxxx"
+                  placeholder="Contoh: 0812-3456-7890"
                   value={whatsapp}
                   onChange={(e) => setWhatsapp(e.target.value)}
                   className="w-full bg-ap-surface border border-ap-line px-4 py-3 font-meta-time text-sm text-ap-text placeholder-ap-muted focus:outline-none focus:border-ap-pink transition-colors rounded-[12px]"
                 />
                 <span className="font-meta-code text-[11px] text-ap-muted">
-                  Satu nomor hanya dapat memiliki 1 booking aktif yang belum selesai.
+                  1 nomor WhatsApp hanya bisa memegang 1 jadwal booking aktif.
                 </span>
               </div>
 
@@ -401,14 +401,14 @@ function BookingContent() {
               <div className="flex flex-col gap-1.5">
                 <div className="flex justify-between items-center">
                   <label htmlFor="note" className="font-meta-label text-xs uppercase tracking-wider text-ap-muted font-bold">
-                    Catatan Tambahan / Preferensi Potong
+                    Catatan Model Rambut / Permintaan Khusus
                   </label>
                   <span className="font-meta-code text-[11px] text-ap-muted">Opsional</span>
                 </div>
                 <textarea
                   id="note"
                   rows={3}
-                  placeholder="Misal: Taper fade tipis samping, jangan potong bagian atas terlalu pendek."
+                  placeholder="Contoh: Taper fade samping, bagian atas rapikan sedikit. Jangan terlalu kependekan."
                   value={note}
                   onChange={(e) => setNote(e.target.value)}
                   className="w-full bg-ap-surface border border-ap-line p-4 text-xs text-ap-text placeholder-ap-muted focus:outline-none focus:border-ap-pink transition-colors rounded-[12px] resize-none"
@@ -468,30 +468,30 @@ function BookingContent() {
                 {/* Time */}
                 <div className="flex items-start justify-between py-1 border-b border-ap-line/40">
                   <div className="flex flex-col">
-                    <span className="font-meta-label text-[10px] uppercase text-ap-muted">Alokasi Waktu</span>
+                    <span className="font-meta-label text-[10px] uppercase text-ap-muted">Jam Potong</span>
                     <span className="font-meta-time text-xs font-bold text-ap-pink">
                       {selectedSlotTime
                         ? `${selectedSlotTime} – ${calculateEndTime(selectedSlotTime)} WIB`
                         : 'Pilih jam'}
                     </span>
                   </div>
-                  <span className="font-meta-code text-xs text-ap-muted">Jam</span>
+                  <span className="font-meta-code text-xs text-ap-muted">WIB</span>
                 </div>
 
                 {/* Barber Chair */}
                 <div className="flex items-start justify-between py-1 border-b border-ap-line/40">
                   <div className="flex flex-col">
                     <span className="font-meta-label text-[10px] uppercase text-ap-muted">Kapasitas</span>
-                    <span className="text-xs font-semibold text-ap-text">Satu Kursi (Personal)</span>
+                    <span className="text-xs font-semibold text-ap-text">1 Kursi Privat (Tanpa Antre)</span>
                   </div>
-                  <span className="font-meta-code text-xs text-ap-muted">Solo</span>
+                  <span className="font-meta-code text-xs text-ap-muted">Privat</span>
                 </div>
 
                 {/* Location */}
                 <div className="flex items-start justify-between py-1">
                   <div className="flex flex-col">
                     <span className="font-meta-label text-[10px] uppercase text-ap-muted">Lokasi</span>
-                    <span className="text-xs font-medium text-ap-text">Jl. Banjarsari Selatan No.88, Tembalang, Kota Semarang</span>
+                    <span className="text-xs font-medium text-ap-text">Jl. Banjarsari Selatan No.88, Tembalang, Semarang</span>
                   </div>
                 </div>
               </div>
@@ -507,7 +507,7 @@ function BookingContent() {
                   </span>
                 </div>
                 <p className="font-meta-code text-[11px] text-ap-muted pt-1 border-t border-ap-line/40">
-                  Bayar di tempat: QRIS / Tunai pas
+                  Bayar di kasir: QRIS / Tunai pas (Tanpa DP)
                 </p>
               </div>
 
@@ -526,12 +526,12 @@ function BookingContent() {
                 disabled={isSubmitting || !selectedSlotTime || !visitorName || !whatsapp}
                 className="w-full py-4 px-6 rounded-[12px] bg-ap-pink hover:bg-ap-text text-white font-meta-label text-sm uppercase font-bold tracking-widest flex items-center justify-center gap-2 transition-all shadow-xl disabled:opacity-50 disabled:cursor-not-allowed active:scale-[0.98]"
               >
-                <span>{isSubmitting ? 'Memproses Booking...' : 'Kunci Booking'}</span>
+                <span>{isSubmitting ? 'Memproses Booking...' : 'Konfirmasi Booking'}</span>
                 <span className="text-base">↗</span>
               </button>
 
               <p className="text-center font-meta-code text-[10px] text-ap-muted">
-                Tiket digital privat akan langsung diterbitkan setelah booking dikonfirmasi.
+                Tiket digital privat langsung aktif setelah booking dikonfirmasi.
               </p>
             </div>
           </aside>

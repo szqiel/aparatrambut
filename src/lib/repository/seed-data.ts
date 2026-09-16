@@ -5,7 +5,8 @@ export const INITIAL_SERVICES: Service[] = [
   {
     id: 'svc-reguler',
     name: 'Reguler Haircut',
-    description: 'Potongan rambut sesuai gaya yang kamu mau.',
+    description:
+      'Potong rambut sesuai permintaan, cuci rambut, kompres handuk hangat, pijat leher & bahu, tonic, dan styling pomade.',
     durationMinutes: 60,
     priceIdr: 50000,
     isActive: true,
@@ -13,7 +14,8 @@ export const INITIAL_SERVICES: Service[] = [
   {
     id: 'svc-shaving',
     name: 'Haircut + Shaving',
-    description: 'Potongan rambut sekaligus merapikan jenggot dan kumis.',
+    description:
+      'Potong rambut lengkap ditambah cukur kumis & jenggot dengan kompres handuk hangat, pisau silet baru steril sekali pakai, dan aftershave.',
     durationMinutes: 60,
     priceIdr: 50000,
     isActive: true,
@@ -21,7 +23,8 @@ export const INITIAL_SERVICES: Service[] = [
   {
     id: 'svc-hairspa',
     name: 'Haircut + Hair SPA',
-    description: 'Potongan rambut dengan perawatan tambahan untuk rambut dan kulit kepala.',
+    description:
+      'Potong rambut dengan creambath kulit kepala untuk mengatasi ketombe dan lepek, ditambah pijat relaksasi kepala serta cooling tonic.',
     durationMinutes: 60,
     priceIdr: 50000,
     isActive: true,
@@ -36,7 +39,8 @@ export const INITIAL_BUSINESS_PROFILE: BusinessProfile = {
   lastOnlineBookingHour: 20,
   address: 'Jl. Banjarsari Selatan No.88, Pedalangan, Kec. Tembalang',
   city: 'Kota Semarang, Jawa Tengah 50275',
-  arrivalNote: '[Catatan kedatangan]',
+  arrivalNote:
+    'Pinggir jalan utama Banjarsari Selatan, 3 menit dari gerbang Undip Tembalang. Parkir motor dan mobil aman tersedia tepat di depan studio.',
   whatsapp: '[Nomor WhatsApp]',
   mapsUrl:
     'https://maps.google.com/?q=Jl.+Banjarsari+Selatan+No.88,+Pedalangan,+Kec.+Tembalang,+Kota+Semarang,+Jawa+Tengah+50275',
@@ -57,7 +61,7 @@ export function getInitialBookings(): Booking[] {
       endTime: calculateEndTime('10:00'),
       visitorName: 'Dimas Arya',
       phoneNormalized: '6287819203341',
-      note: 'Fade tipis samping, potongan rapi.',
+      note: 'Fade tipis samping, kompres handuk hangat.',
       status: 'COMPLETED',
       createdAt: new Date().toISOString(),
       updatedAt: new Date().toISOString(),
@@ -73,7 +77,7 @@ export function getInitialBookings(): Booking[] {
       endTime: calculateEndTime('11:00'),
       visitorName: 'Fajar Nugraha',
       phoneNormalized: '6282144332109',
-      note: 'Merapikan jenggot dan kumis rapi.',
+      note: 'Merapikan kumis dan jenggot rapi simetris.',
       status: 'COMPLETED',
       createdAt: new Date().toISOString(),
       updatedAt: new Date().toISOString(),
@@ -89,7 +93,7 @@ export function getInitialBookings(): Booking[] {
       endTime: calculateEndTime('13:00'),
       visitorName: 'Raditya Pratama',
       phoneNormalized: '6281288904112',
-      note: 'Fade 0.5 taper, request pomade matte clay.',
+      note: 'Taper fade samping, atas rapikan sedikit. Styling matte pomade.',
       status: 'BOOKED',
       createdAt: new Date().toISOString(),
       updatedAt: new Date().toISOString(),
@@ -105,7 +109,7 @@ export function getInitialBookings(): Booking[] {
       endTime: calculateEndTime('15:00'),
       visitorName: 'Budi Santoso',
       phoneNormalized: '6285678112098',
-      note: 'Walk-in langsung ke studio.',
+      note: 'Tamu walk-in langsung ke studio.',
       status: 'WALK_IN',
       createdAt: new Date().toISOString(),
       updatedAt: new Date().toISOString(),
@@ -121,7 +125,7 @@ export function getInitialBookings(): Booking[] {
       endTime: calculateEndTime('17:00'),
       visitorName: 'Kevin Sanjaya',
       phoneNormalized: '6281390905544',
-      note: 'Perawatan kulit kepala dan pijat relaksasi.',
+      note: 'Creambath kulit kepala dan pijat relaksasi leher.',
       status: 'BOOKED',
       createdAt: new Date().toISOString(),
       updatedAt: new Date().toISOString(),

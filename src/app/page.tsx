@@ -6,7 +6,7 @@ export default function HomePage() {
       id: 'svc-reguler',
       num: '01',
       name: 'Reguler Haircut',
-      desc: 'Potongan rambut sesuai gaya yang kamu mau.',
+      desc: 'Potong rambut sesuai permintaan, cuci rambut, kompres handuk hangat, pijat leher & bahu, tonic, dan styling pomade.',
       duration: '60 Menit',
       price: 'Rp50.000',
     },
@@ -14,7 +14,7 @@ export default function HomePage() {
       id: 'svc-shaving',
       num: '02',
       name: 'Haircut + Shaving',
-      desc: 'Potongan rambut sekaligus merapikan jenggot dan kumis.',
+      desc: 'Potong rambut lengkap ditambah cukur kumis & jenggot dengan kompres handuk hangat, pisau silet baru steril sekali pakai, dan aftershave.',
       duration: '60 Menit',
       price: 'Rp50.000',
     },
@@ -22,7 +22,7 @@ export default function HomePage() {
       id: 'svc-hairspa',
       num: '03',
       name: 'Haircut + Hair SPA',
-      desc: 'Potongan rambut dengan perawatan tambahan untuk rambut dan kulit kepala.',
+      desc: 'Potong rambut dengan creambath kulit kepala untuk mengatasi ketombe dan lepek, ditambah pijat relaksasi kepala serta cooling tonic.',
       duration: '60 Menit',
       price: 'Rp50.000',
     },
@@ -38,17 +38,17 @@ export default function HomePage() {
             <div className="inline-flex items-center gap-2 bg-ap-surface-low border border-ap-line px-3 py-1">
               <span className="w-2 h-2 rounded-full bg-ap-pink"></span>
               <span className="font-meta-label text-xs uppercase text-ap-text tracking-wider">
-                01 APARATRAMBUT STUDIO
+                APARATRAMBUT • TEMBALANG, SEMARANG
               </span>
             </div>
 
             <h1 className="font-headline-lg text-4xl sm:text-5xl lg:text-7xl font-extrabold text-ap-text tracking-tight leading-[1.05]">
-              Cukur rapi, tanpa nunggu{' '}
-              <span className="text-ap-pink italic font-normal">lama.</span>
+              Potong rapi,{' '}
+              <span className="text-ap-pink italic font-normal">jadwal pasti tanpa antre.</span>
             </h1>
 
             <p className="font-body-lg text-base sm:text-lg text-ap-muted max-w-2xl leading-relaxed">
-              Datang sesuai jadwal, duduk nyaman, lalu pulang dengan rambut yang terasa lebih rapi.
+              Pilih jam potong online, datang sesuai jadwal, langsung dicukur tanpa buang waktu menunggu giliran.
             </p>
           </div>
 
@@ -56,10 +56,10 @@ export default function HomePage() {
           <div className="lg:col-span-4 flex flex-col items-start lg:items-end justify-between gap-6 lg:h-full">
             <div className="flex flex-col items-start lg:items-end gap-1 text-left lg:text-right">
               <span className="font-meta-label text-xs text-ap-muted uppercase tracking-widest">
-                Jam Buka
+                Jam Operasional
               </span>
               <p className="font-meta-time text-sm font-semibold text-ap-text">
-                10.00 – 21.00 WIB • SETIAP HARI
+                10.00 – 21.00 WIB • BUKA SETIAP HARI
               </p>
               <div className="inline-flex items-center gap-2 pt-1">
                 <span className="w-1.5 h-1.5 rounded-full bg-ap-pink"></span>
@@ -74,7 +74,7 @@ export default function HomePage() {
               href="/booking"
               className="w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-4 rounded-[12px] bg-ap-text text-ap-bg hover:bg-ap-pink hover:text-white font-meta-label text-sm uppercase font-bold tracking-widest shadow-xl transition-all active:scale-[0.98]"
             >
-              <span>Booking Sekarang</span>
+              <span>Pilih Jadwal Potong</span>
               <span className="text-base font-normal">↗</span>
             </Link>
           </div>
@@ -95,7 +95,7 @@ export default function HomePage() {
             <div className="absolute top-4 left-4 sm:top-6 sm:left-6">
               <div className="bg-black/80 backdrop-blur-md px-3 py-1.5 border border-white/10">
                 <span className="font-meta-code text-xs text-ap-pink uppercase tracking-widest">
-                  PENGALAMAN DI STUDIO
+                  KENAPA HARUS APARATRAMBUT?
                 </span>
               </div>
             </div>
@@ -103,22 +103,22 @@ export default function HomePage() {
             <div className="absolute bottom-4 left-4 right-4 sm:bottom-6 sm:left-6 sm:right-6 flex flex-col sm:flex-row items-start sm:items-end justify-between gap-4">
               <div className="bg-black/85 backdrop-blur-md p-4 max-w-md border border-white/10">
                 <p className="font-headline-sm text-lg font-bold text-white tracking-tight">
-                  Satu booking. Satu waktu yang jelas.
+                  Waktu khusus untuk potonganmu.
                 </p>
                 <p className="font-body-sm text-xs text-gray-300 mt-1">
-                  Ruang yang tenang, kursi yang nyaman, dan waktu yang cukup untuk menikmati potonganmu.
+                  Satu jadwal untuk satu orang. Tidak ada antrean berisik di ruang tunggu, kapster bekerja tenang dan teliti sampai rambutmu benar-benar rapi.
                 </p>
               </div>
 
               <div className="hidden sm:flex flex-col items-end gap-1 bg-black/85 backdrop-blur-md p-3 border border-white/10">
                 <span className="font-meta-label text-[10px] uppercase text-gray-400">
-                  Alamat Studio
+                  Lokasi Studio
                 </span>
                 <span className="font-meta-code text-xs text-white">
-                  Satu kursi, satu barber
+                  Satu kursi, fokus untukmu
                 </span>
                 <span className="font-meta-time text-xs text-ap-pink">
-                  Jl. Banjarsari Selatan No.88, Tembalang, Kota Semarang
+                  Jl. Banjarsari Selatan No.88, Tembalang, Semarang
                 </span>
               </div>
             </div>
@@ -133,7 +133,7 @@ export default function HomePage() {
             <div className="flex items-center gap-2">
               <span className="w-2 h-2 rounded-full bg-ap-pink"></span>
               <span className="font-meta-label text-xs uppercase tracking-widest text-ap-text font-semibold">
-                02 PILIH LAYANAN
+                PILIHAN LAYANAN
               </span>
             </div>
             <Link
@@ -195,32 +195,32 @@ export default function HomePage() {
               <div className="flex items-center gap-2">
                 <span className="w-1.5 h-1.5 rounded-full bg-ap-pink"></span>
                 <span className="font-meta-label text-xs uppercase tracking-widest text-ap-text font-semibold">
-                  TENTANG KAMI
+                  STANDAR LAYANAN KAMI
                 </span>
               </div>
               <p className="font-headline-sm text-xl sm:text-2xl text-ap-text font-bold leading-snug">
-                Kami menjaga jumlah booking tetap wajar supaya setiap sesi tidak terasa terburu-buru.
+                Potong rambut yang teliti butuh waktu dan ketenangan.
               </p>
             </div>
 
             <div className="pt-8 flex flex-col gap-4">
               <p className="font-body-sm text-xs text-ap-muted leading-relaxed">
-                Kami menjaga satu booking untuk satu slot, supaya kamu bisa duduk nyaman dan barber punya waktu yang cukup untuk mengerjakan detailnya.
+                Kami menjaga satu jadwal untuk satu orang agar setiap potongan mendapatkan waktu 60 menit yang cukup. Hasil potongan rapi, alat selalu disterilkan, dan pisau silet baru selalu diganti untuk tiap orang.
               </p>
               <div className="flex items-center gap-6 pt-4 border-t border-ap-line">
                 <div className="flex flex-col">
                   <span className="font-meta-time text-2xl text-ap-pink font-bold">11</span>
-                  <span className="font-meta-code text-[11px] text-ap-muted uppercase">Slot / Hari</span>
+                  <span className="font-meta-code text-[11px] text-ap-muted uppercase">Jadwal / Hari</span>
                 </div>
                 <div className="w-px h-8 bg-ap-line"></div>
                 <div className="flex flex-col">
                   <span className="font-meta-time text-2xl text-ap-text font-bold">1</span>
-                  <span className="font-meta-code text-[11px] text-ap-muted uppercase">Orang / Slot</span>
+                  <span className="font-meta-code text-[11px] text-ap-muted uppercase">Tamu / Jam</span>
                 </div>
                 <div className="w-px h-8 bg-ap-line"></div>
                 <div className="flex flex-col">
-                  <span className="font-meta-time text-sm text-ap-text font-bold">10.00–21.00</span>
-                  <span className="font-meta-code text-[11px] text-ap-muted uppercase">Jam Buka</span>
+                  <span className="font-meta-time text-sm text-ap-text font-bold">Rp50.000</span>
+                  <span className="font-meta-code text-[11px] text-ap-muted uppercase">Tarif Flat Bersih</span>
                 </div>
               </div>
             </div>
@@ -233,7 +233,7 @@ export default function HomePage() {
               <div className="flex items-start justify-between pb-4">
                 <div>
                   <span className="font-meta-label text-xs text-ap-pink uppercase tracking-widest font-semibold">
-                    LOKASI STUDIO
+                    LOKASI & AKSES
                   </span>
                   <h3 className="font-headline-sm text-xl font-bold text-ap-text mt-1">
                     Jl. Banjarsari Selatan No.88, Pedalangan, Kec. Tembalang
@@ -246,10 +246,10 @@ export default function HomePage() {
 
               <div className="p-4 bg-ap-surface border border-ap-line my-4 flex flex-col gap-2">
                 <p className="font-body-sm text-xs text-ap-muted">
-                  <strong className="text-ap-text">Petunjuk Kedatangan:</strong> [Catatan kedatangan]
+                  <strong className="text-ap-text">Petunjuk Kedatangan:</strong> Pinggir jalan utama Banjarsari Selatan, 3 menit dari gerbang Undip Tembalang. Parkir motor dan mobil aman tersedia tepat di depan studio.
                 </p>
                 <p className="font-meta-code text-[11px] text-ap-muted">
-                  Buka setiap hari 10.00 – 21.00 WIB • Sesi terakhir pukul 20.00 WIB
+                  Buka setiap hari 10.00 – 21.00 WIB • Booking online terakhir pukul 20.00 WIB
                 </p>
               </div>
 
@@ -261,7 +261,7 @@ export default function HomePage() {
                   Detail Alamat Lengkap →
                 </Link>
                 <a
-                  href="https://maps.google.com"
+                  href="https://maps.google.com/?q=Jl.+Banjarsari+Selatan+No.88,+Pedalangan,+Kec.+Tembalang,+Kota+Semarang,+Jawa+Tengah+50275"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="font-meta-code text-xs text-ap-pink hover:underline inline-flex items-center gap-1 font-semibold"
@@ -275,10 +275,10 @@ export default function HomePage() {
             <div className="bg-ap-soft-pink border border-ap-pink/30 p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
               <div className="flex flex-col gap-1">
                 <span className="font-meta-label text-xs uppercase tracking-widest text-ap-pink font-bold">
-                  Booking Sekarang
+                  Booking Cepat
                 </span>
                 <p className="font-headline-sm text-lg font-bold text-ap-text">
-                  Kalau sudah tahu jamnya, langsung amankan booking kamu.
+                  Mau potong kapan? Amankan jam yang cocok sebelum slot hari ini penuh.
                 </p>
               </div>
               <Link

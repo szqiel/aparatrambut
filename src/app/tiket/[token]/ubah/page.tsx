@@ -279,7 +279,7 @@ export default function ReschedulePage() {
                         ? 'Tersedia'
                         : slot.status === 'PAST'
                         ? 'Sudah lewat'
-                        : 'Terisi'}
+                        : 'Sudah penuh'}
                     </span>
                   </button>
                 );
@@ -307,7 +307,7 @@ export default function ReschedulePage() {
             disabled={isSubmitting || !selectedSlotTime}
             className="px-8 py-3.5 rounded-[12px] bg-ap-pink hover:bg-ap-text text-white font-meta-label text-xs uppercase font-bold tracking-widest transition-colors shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
           >
-            {isSubmitting ? 'Memindahkan Jadwal...' : 'Simpan Jadwal Baru ↗'}
+            {isSubmitting ? 'Memindahkan Jadwal...' : 'Konfirmasi Pindah Jadwal ↗'}
           </button>
         </div>
       </form>
