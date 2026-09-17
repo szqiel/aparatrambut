@@ -143,18 +143,18 @@ function BookingContent() {
             </span>
           </div>
 
-          <nav aria-label="Tahapan reservasi" className="flex items-center gap-4 font-meta-code text-xs text-ap-muted">
-            <div className={`flex items-center gap-1.5 ${selectedService ? 'text-ap-text font-bold' : ''}`}>
+          <nav aria-label="Tahapan reservasi" className="flex items-center gap-3 sm:gap-4 font-meta-code text-[11px] sm:text-xs text-ap-muted overflow-x-auto no-scrollbar py-1">
+            <div className={`shrink-0 flex items-center gap-1.5 ${selectedService ? 'text-ap-text font-bold' : ''}`}>
               <span className="text-ap-pink">•</span>
               <span>1. Layanan</span>
             </div>
-            <span>•</span>
-            <div className={`flex items-center gap-1.5 ${selectedSlotTime ? 'text-ap-text font-bold' : ''}`}>
+            <span className="shrink-0">•</span>
+            <div className={`shrink-0 flex items-center gap-1.5 ${selectedSlotTime ? 'text-ap-text font-bold' : ''}`}>
               <span className={selectedSlotTime ? 'text-ap-pink' : ''}>•</span>
               <span>2. Tanggal & Jam</span>
             </div>
-            <span>•</span>
-            <div className={`flex items-center gap-1.5 ${visitorName && whatsapp ? 'text-ap-text font-bold' : ''}`}>
+            <span className="shrink-0">•</span>
+            <div className={`shrink-0 flex items-center gap-1.5 ${visitorName && whatsapp ? 'text-ap-text font-bold' : ''}`}>
               <span>•</span>
               <span>3. Data Diri</span>
             </div>
@@ -238,7 +238,7 @@ function BookingContent() {
               </div>
 
               {/* Date Scroll Pills */}
-              <div className="flex items-center gap-2.5 overflow-x-auto pb-2 pt-1 no-scrollbar">
+              <div className="flex items-center gap-2.5 overflow-x-auto pb-2 pt-1 no-scrollbar snap-x snap-mandatory touch-pan-x">
                 {dates.map((dStr) => {
                   const isSelected = selectedDate === dStr;
                   const isHoliday = holidayDates.has(dStr);
@@ -255,7 +255,7 @@ function BookingContent() {
                         setSelectedDate(dStr);
                         setSelectedSlotTime('');
                       }}
-                      className={`flex-shrink-0 flex flex-col items-center justify-center w-24 py-3 px-2 border rounded-[12px] transition-all ${
+                      className={`snap-start flex-shrink-0 flex flex-col items-center justify-center w-24 py-3 px-2 border rounded-[12px] transition-all ${
                         isHoliday
                           ? 'border-ap-line bg-ap-surface-high opacity-50 cursor-not-allowed text-ap-muted'
                           : isSelected
@@ -313,7 +313,7 @@ function BookingContent() {
                         type="button"
                         disabled={!isAvailable}
                         onClick={() => setSelectedSlotTime(slot.startTime)}
-                        className={`p-3.5 border rounded-[12px] text-left flex flex-col justify-between transition-all ${
+                        className={`p-3 sm:p-3.5 border rounded-[12px] text-left flex flex-col justify-between transition-all ${
                           !isAvailable
                             ? 'bg-ap-surface-lowest/50 border-ap-line opacity-45 cursor-not-allowed text-ap-muted'
                             : isSelected
@@ -371,6 +371,8 @@ function BookingContent() {
                   id="visitorName"
                   type="text"
                   required
+                  autoComplete="name"
+                  autoCapitalize="words"
                   placeholder="Contoh: Dimas Pratama"
                   value={visitorName}
                   onChange={(e) => setVisitorName(e.target.value)}
@@ -386,6 +388,8 @@ function BookingContent() {
                 <input
                   id="whatsapp"
                   type="tel"
+                  inputMode="tel"
+                  autoComplete="tel"
                   required
                   placeholder="Contoh: 0812-3456-7890"
                   value={whatsapp}

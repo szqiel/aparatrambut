@@ -112,10 +112,10 @@ export default function LayananPage() {
               </div>
 
               {/* Action */}
-              <div className="md:col-span-2 flex items-center md:justify-end pt-2 md:pt-0">
+              <div className="md:col-span-2 flex items-center md:justify-end pt-2 md:pt-0 w-full sm:w-auto">
                 <Link
                   href={`/booking?service=${svc.id}`}
-                  className="inline-flex items-center gap-2 px-5 py-3 rounded-[12px] bg-ap-surface-low border border-ap-line text-ap-text group-hover:bg-ap-pink group-hover:text-white group-hover:border-ap-pink font-meta-label text-xs uppercase font-bold tracking-wider transition-all"
+                  className="w-full sm:w-auto justify-center inline-flex items-center gap-2 px-5 py-3 rounded-[12px] bg-ap-surface-low border border-ap-line text-ap-text group-hover:bg-ap-pink group-hover:text-white group-hover:border-ap-pink font-meta-label text-xs uppercase font-bold tracking-wider transition-all"
                 >
                   <span>Pilih Layanan</span>
                   <span className="text-sm">→</span>
@@ -138,7 +138,7 @@ export default function LayananPage() {
         </div>
         <Link
           href="/booking"
-          className="px-6 py-3 bg-ap-text text-ap-bg hover:bg-ap-pink hover:text-white rounded-[12px] font-meta-label text-xs uppercase font-bold tracking-widest transition-colors shrink-0"
+          className="w-full sm:w-auto text-center px-6 py-3 bg-ap-text text-ap-bg hover:bg-ap-pink hover:text-white rounded-[12px] font-meta-label text-xs uppercase font-bold tracking-widest transition-colors shrink-0"
         >
           Lihat Jam Kosong ↗
         </Link>

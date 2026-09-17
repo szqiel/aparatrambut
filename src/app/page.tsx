@@ -42,7 +42,7 @@ export default function HomePage() {
               </span>
             </div>
 
-            <h1 className="font-headline-lg text-4xl sm:text-5xl lg:text-7xl font-extrabold text-ap-text tracking-tight leading-[1.05]">
+            <h1 className="font-headline-lg text-3xl sm:text-5xl lg:text-7xl font-extrabold text-ap-text tracking-tight leading-[1.05]">
               potong rapi,{' '}
               <span className="text-ap-pink italic font-normal">jadwal pasti tanpa antre.</span>
             </h1>
@@ -207,20 +207,20 @@ export default function HomePage() {
               <p className="font-body-sm text-xs text-ap-muted leading-relaxed">
                 Kami menjaga satu jadwal untuk satu orang agar setiap potongan mendapatkan waktu 60 menit yang cukup. Hasil potongan rapi, alat selalu disterilkan, dan pisau silet baru selalu diganti untuk tiap orang.
               </p>
-              <div className="flex items-center gap-6 pt-4 border-t border-ap-line">
+              <div className="grid grid-cols-3 gap-2 sm:flex sm:items-center sm:gap-6 pt-4 border-t border-ap-line">
                 <div className="flex flex-col">
-                  <span className="font-meta-time text-2xl text-ap-pink font-bold">11</span>
-                  <span className="font-meta-code text-[11px] text-ap-muted uppercase">Jadwal / Hari</span>
+                  <span className="font-meta-time text-xl sm:text-2xl text-ap-pink font-bold">11</span>
+                  <span className="font-meta-code text-[10px] sm:text-[11px] text-ap-muted uppercase">Jadwal / Hari</span>
                 </div>
-                <div className="w-px h-8 bg-ap-line"></div>
+                <div className="hidden sm:block w-px h-8 bg-ap-line"></div>
                 <div className="flex flex-col">
-                  <span className="font-meta-time text-2xl text-ap-text font-bold">1</span>
-                  <span className="font-meta-code text-[11px] text-ap-muted uppercase">Tamu / Jam</span>
+                  <span className="font-meta-time text-xl sm:text-2xl text-ap-text font-bold">1</span>
+                  <span className="font-meta-code text-[10px] sm:text-[11px] text-ap-muted uppercase">Tamu / Jam</span>
                 </div>
-                <div className="w-px h-8 bg-ap-line"></div>
+                <div className="hidden sm:block w-px h-8 bg-ap-line"></div>
                 <div className="flex flex-col">
-                  <span className="font-meta-time text-sm text-ap-text font-bold">Rp50.000</span>
-                  <span className="font-meta-code text-[11px] text-ap-muted uppercase">Tarif Flat Bersih</span>
+                  <span className="font-meta-time text-xs sm:text-sm text-ap-text font-bold">Rp50.000</span>
+                  <span className="font-meta-code text-[10px] sm:text-[11px] text-ap-muted uppercase">Tarif Bersih</span>
                 </div>
               </div>
             </div>
@@ -229,8 +229,8 @@ export default function HomePage() {
           {/* Right Location & Quick Prompt */}
           <div className="lg:col-span-7 flex flex-col gap-6">
             {/* Location block */}
-            <div className="bg-ap-surface-low border border-ap-line p-8 flex flex-col justify-between">
-              <div className="flex items-start justify-between pb-4">
+            <div className="bg-ap-surface-low border border-ap-line p-6 sm:p-8 flex flex-col justify-between">
+              <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-3 pb-4">
                 <div>
                   <span className="font-meta-label text-xs text-ap-pink uppercase tracking-widest font-semibold">
                     LOKASI & AKSES
@@ -239,7 +239,7 @@ export default function HomePage() {
                     Jl. Banjarsari Selatan No.88, Pedalangan, Kec. Tembalang
                   </h3>
                 </div>
-                <span className="font-meta-code text-xs text-ap-muted bg-ap-surface border border-ap-line px-3 py-1">
+                <span className="self-start sm:self-auto font-meta-code text-xs text-ap-muted bg-ap-surface border border-ap-line px-3 py-1 shrink-0">
                   Kota Semarang
                 </span>
               </div>
@@ -253,7 +253,7 @@ export default function HomePage() {
                 </p>
               </div>
 
-              <div className="flex items-center justify-between pt-2">
+              <div className="flex flex-wrap items-center justify-between gap-2 pt-2">
                 <Link
                   href="/alamat"
                   className="font-meta-code text-xs text-ap-muted hover:text-ap-text transition-colors"
@@ -272,7 +272,7 @@ export default function HomePage() {
             </div>
 
             {/* Quick booking callout */}
-            <div className="bg-ap-soft-pink border border-ap-pink/30 p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
+            <div className="bg-ap-soft-pink border border-ap-pink/30 p-6 sm:p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6">
               <div className="flex flex-col gap-1">
                 <span className="font-meta-label text-xs uppercase tracking-widest text-ap-pink font-bold">
                   Booking Cepat
@@ -283,7 +283,7 @@ export default function HomePage() {
               </div>
               <Link
                 href="/booking"
-                className="px-6 py-3.5 bg-ap-pink hover:bg-ap-text text-white font-meta-label text-xs uppercase font-bold tracking-widest rounded-[12px] shrink-0 transition-colors shadow-lg"
+                className="w-full sm:w-auto text-center px-6 py-3.5 bg-ap-pink hover:bg-ap-text text-white font-meta-label text-xs uppercase font-bold tracking-widest rounded-[12px] shrink-0 transition-colors shadow-lg"
               >
                 Pilih Jam ↗
               </Link>

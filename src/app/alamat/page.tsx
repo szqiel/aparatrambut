@@ -85,7 +85,7 @@ export default function AlamatPage() {
                 href="https://wa.me/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-[12px] bg-ap-surface border border-ap-line text-ap-pink hover:bg-ap-pink hover:text-white font-meta-label text-xs uppercase font-bold tracking-wider transition-colors"
+                className="w-full sm:w-auto justify-center inline-flex items-center gap-2 px-5 py-2.5 rounded-[12px] bg-ap-surface border border-ap-line text-ap-pink hover:bg-ap-pink hover:text-white font-meta-label text-xs uppercase font-bold tracking-wider transition-colors"
               >
                 Chat WhatsApp ↗
               </a>
@@ -155,13 +155,13 @@ export default function AlamatPage() {
               </div>
             </div>
 
-            <div className="pt-6 border-t border-ap-line flex items-center justify-between">
+            <div className="pt-6 border-t border-ap-line flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
               <span className="font-meta-code text-xs text-ap-muted">
                 Sudah tahu jadwal luangmu?
               </span>
               <Link
                 href="/booking"
-                className="px-6 py-3 rounded-[12px] bg-ap-pink hover:bg-ap-text text-white font-meta-label text-xs uppercase font-bold tracking-wider transition-colors shadow-lg"
+                className="w-full sm:w-auto text-center px-6 py-3 rounded-[12px] bg-ap-pink hover:bg-ap-text text-white font-meta-label text-xs uppercase font-bold tracking-wider transition-colors shadow-lg"
               >
                 Pilih Jadwal Booking Sekarang ↗
               </Link>

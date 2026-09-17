@@ -184,7 +184,7 @@ export default function ReschedulePage() {
             </span>
           </div>
 
-          <div className="flex items-center gap-2.5 overflow-x-auto pb-2 pt-1 no-scrollbar">
+          <div className="flex items-center gap-2.5 overflow-x-auto pb-2 pt-1 no-scrollbar snap-x snap-mandatory touch-pan-x">
             {dates.map((dStr) => {
               const isSelected = selectedDate === dStr;
               const isHoliday = holidayDates.has(dStr);
@@ -201,7 +201,7 @@ export default function ReschedulePage() {
                     setSelectedDate(dStr);
                     setSelectedSlotTime('');
                   }}
-                  className={`flex-shrink-0 flex flex-col items-center justify-center w-24 py-3 px-2 border rounded-[12px] transition-all ${
+                  className={`snap-start flex-shrink-0 flex flex-col items-center justify-center w-24 py-3 px-2 border rounded-[12px] transition-all ${
                     isHoliday
                       ? 'border-ap-line bg-ap-surface-high opacity-50 cursor-not-allowed text-ap-muted'
                       : isSelected
@@ -252,7 +252,7 @@ export default function ReschedulePage() {
                     type="button"
                     disabled={!isAvailable}
                     onClick={() => setSelectedSlotTime(slot.startTime)}
-                    className={`p-3.5 border rounded-[12px] text-left flex flex-col justify-between transition-all ${
+                    className={`p-3 sm:p-3.5 border rounded-[12px] text-left flex flex-col justify-between transition-all ${
                       !isAvailable
                         ? 'bg-ap-surface-lowest/50 border-ap-line opacity-45 cursor-not-allowed text-ap-muted'
                         : isSelected
@@ -295,17 +295,17 @@ export default function ReschedulePage() {
         )}
 
         {/* Submit action */}
-        <div className="flex items-center justify-end gap-4">
+        <div className="flex flex-col-reverse sm:flex-row items-stretch sm:items-center justify-end gap-3 sm:gap-4">
           <Link
             href={`/tiket/${token}`}
-            className="px-5 py-3 rounded-[12px] border border-ap-line text-ap-text font-meta-code text-xs uppercase hover:bg-ap-surface-low"
+            className="w-full sm:w-auto text-center px-5 py-3.5 rounded-[12px] border border-ap-line text-ap-text font-meta-code text-xs uppercase hover:bg-ap-surface-low transition-colors"
           >
             Batal
           </Link>
           <button
             type="submit"
             disabled={isSubmitting || !selectedSlotTime}
-            className="px-8 py-3.5 rounded-[12px] bg-ap-pink hover:bg-ap-text text-white font-meta-label text-xs uppercase font-bold tracking-widest transition-colors shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
+            className="w-full sm:w-auto text-center px-8 py-3.5 rounded-[12px] bg-ap-pink hover:bg-ap-text text-white font-meta-label text-xs uppercase font-bold tracking-widest transition-colors shadow-lg disabled:opacity-50 disabled:cursor-not-allowed"
           >
             {isSubmitting ? 'Memindahkan Jadwal...' : 'Konfirmasi Pindah Jadwal ↗'}
           </button>

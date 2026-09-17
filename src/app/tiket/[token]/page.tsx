@@ -158,16 +158,16 @@ export default function TiketPage() {
               <span className="text-ap-pink text-sm">•</span>
               <span>KODE BOOKING</span>
             </div>
-            <h1 className="font-meta-code text-5xl sm:text-7xl font-extrabold tracking-tight text-ap-text select-all">
+            <h1 className="font-meta-code text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-ap-text select-all break-all">
               {booking.bookingCode}
             </h1>
           </div>
 
-          <div className="flex flex-wrap items-center gap-3">
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
             {getStatusBadge()}
             <button
               onClick={handleCopyCode}
-              className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-ap-surface border border-ap-line hover:border-ap-text/40 text-ap-text font-meta-code text-xs uppercase transition-colors"
+              className="w-full sm:w-auto justify-center inline-flex items-center gap-2 px-3.5 py-2 sm:py-1.5 rounded-[10px] bg-ap-surface border border-ap-line hover:border-ap-text/40 text-ap-text font-meta-code text-xs uppercase transition-colors"
             >
               <span>{copied ? '✓ Kode Tersalin!' : 'Salin Kode Booking'}</span>
             </button>

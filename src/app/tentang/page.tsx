@@ -128,13 +128,13 @@ export default function TentangPage() {
           </div>
         </div>
 
-        <div className="pt-6 border-t border-ap-line flex items-center justify-between">
+        <div className="pt-6 border-t border-ap-line flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
           <span className="font-meta-code text-xs text-ap-muted">
             Siap untuk mencoba?
           </span>
           <Link
             href="/booking"
-            className="px-6 py-3 rounded-[12px] bg-ap-pink hover:bg-ap-text text-white font-meta-label text-xs uppercase font-bold tracking-widest transition-colors"
+            className="w-full sm:w-auto text-center px-6 py-3 rounded-[12px] bg-ap-pink hover:bg-ap-text text-white font-meta-label text-xs uppercase font-bold tracking-widest transition-colors shadow-lg"
           >
             Booking Jadwal Sekarang ↗
           </Link>
