@@ -14,19 +14,19 @@ export default function TentangPage() {
               </span>
             </div>
             <div className="space-y-1 font-meta-code text-xs text-ap-muted">
-              <p>KONSEP SATU KURSI</p>
-              <p>Fokus penuh untuk tiap orang</p>
-              <p>Tanpa antrean panjang</p>
+              <p>Barbershop di Tembalang, Semarang</p>
+              <p>Cukur nyaman</p>
+              <p>Tanpa antrian panjang</p>
             </div>
           </div>
 
           <div className="md:col-span-8 flex flex-col">
             <h1 className="font-headline-lg text-3xl sm:text-5xl lg:text-6xl font-extrabold text-ap-text tracking-tight lowercase">
-              Datang sesuai jadwal,<br />
-              <span className="text-ap-pink font-normal">langsung dipangkas tanpa antre.</span>
+              tampil maksimal,<br />
+              <span className="text-ap-pink font-normal">langsung dipangkas tanpa antri.</span>
             </h1>
             <p className="font-body-lg text-base sm:text-lg text-ap-muted mt-6 max-w-2xl leading-relaxed">
-              aparatrambut didirikan untuk pria yang menghargai waktu. Kami menghilangkan kebiasaan menunggu berjam-jam di ruang tunggu barbershop yang penuh sesak.
+              aparatrambut, hadir untuk pria yang ingin tampil maksimal. Kami menghilangkan kebiasaan menunggu berjam-jam di ruang tunggu barbershop yang penuh sesak.
             </p>
             <p className="font-body-lg text-base sm:text-lg text-ap-muted mt-3 max-w-2xl leading-relaxed">
               Dengan sistem pemesanan online per jam, kamu datang pada waktu yang kamu pilih dan langsung duduk di kursi. Setiap tamu mendapatkan waktu 60 menit yang tenang, pengerjaan teliti, dan kebersihan alat yang terjamin.

@@ -14,7 +14,7 @@ export function Footer() {
               </span>
             </div>
             <p className="font-body-sm text-xs text-ap-muted max-w-sm leading-relaxed">
-              Barbershop satu kursi di Tembalang, Semarang. Potong rambut nyaman, jadwal pasti, dan bebas antrean panjang.
+              Barbershop di Tembalang, Semarang. Potong rambut nyaman, jadwal pasti, dan bebas antrean panjang.
             </p>
             <div className="flex items-center gap-2 pt-2">
               <span className="w-2 h-2 rounded-full bg-ap-pink"></span>

@@ -44,19 +44,19 @@ export default function LayananPage() {
               </span>
             </div>
             <div className="space-y-1 font-meta-code text-xs text-ap-muted">
-              <p>HARGA FLAT & JELAS</p>
+              <p>HARGA FLAT</p>
               <p>Rp50.000 per layanan</p>
-              <p>Semua berdurasi 60 menit</p>
+              <p>Berdurasi 60 menit</p>
             </div>
           </div>
 
           <div className="md:col-span-8 flex flex-col">
             <h1 className="font-headline-lg text-3xl sm:text-5xl lg:text-6xl font-extrabold text-ap-text tracking-tight lowercase">
-              Tiga layanan, tarif flat Rp50.000.<br />
-              <span className="text-ap-pink font-normal">Semua 60 menit, bayar di kasir setelah pangkas selesai.</span>
+              Tiga layanan,<br />
+              <span className="text-ap-pink font-normal">Pilih yang paling cocok untukmu</span>
             </h1>
             <p className="font-body-lg text-sm sm:text-base text-ap-muted mt-4 max-w-2xl leading-relaxed">
-              Semua layanan berdurasi 60 menit dan dibayar di kasir setelah pangkas selesai. Tanpa uang muka (DP) dan tanpa biaya tersembunyi.
+              Semua layanan berdurasi 60 menit dan dibayar di kasir setelah pangkas selesai.
             </p>
           </div>
         </div>
