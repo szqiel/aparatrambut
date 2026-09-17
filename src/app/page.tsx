@@ -43,7 +43,7 @@ export default function HomePage() {
             </div>
 
             <h1 className="font-headline-lg text-4xl sm:text-5xl lg:text-7xl font-extrabold text-ap-text tracking-tight leading-[1.05]">
-              Potong rapi,{' '}
+              potong rapi,{' '}
               <span className="text-ap-pink italic font-normal">jadwal pasti tanpa antre.</span>
             </h1>
 
